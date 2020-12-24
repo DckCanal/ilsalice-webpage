@@ -1,0 +1,12 @@
+{
+  "name": "bs",
+  "version": "1.0.0",
+  "description": "Testing bootstrap with npm",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MDC",
+  "license": "ISC",
+  "dependencies": {}
+}
