@@ -2,6 +2,7 @@ const contentDivs = document.querySelectorAll(".content-div");
 const navBtn = document.querySelector(".navbar-toggler");
 const navbar = document.querySelector(".navbar-main");
 const navItems = document.querySelectorAll(".nav-item");
+const brand = document.querySelector(".navbar-brand");
 let navMenuHeight = 40 * navItems.length;
 let navExpanded = false;
 
@@ -43,4 +44,9 @@ navBtn.addEventListener("click", () => {
       });
   }
   navExpanded = !navExpanded;
+});
+
+brand.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
 });

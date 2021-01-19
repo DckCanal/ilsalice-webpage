@@ -24,6 +24,7 @@ nav {
 }
 .even h5 {
   color: var(--even-title);
+  margin-top: 3rem;
 }
 .content-div {
   transition: transform 1s, opacity 2s;
