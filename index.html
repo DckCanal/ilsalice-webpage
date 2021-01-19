@@ -16,14 +16,12 @@
       crossorigin="anonymous"
     />
 
+    <script src="ui.js" defer></script>
+
     <title>il Salice - massofisioterapia</title>
-    <style>
-      hr {
-        background-color: rgb(0, 116, 6);
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body style="background-color: #e5e7e4">
+  <body>
     <!-- ---HEADER--- -->
     <div
       class="jumbotron jumbotron-fluid mb-0 py-5"
@@ -36,7 +34,8 @@
           url('images/IMG_0656.JPG');
         background-size: cover;
         background-position: center;
-        min-height: 400px;
+        /*min-height: 400px;*/
+        height: 100vh;
       "
     >
       <div class="container text-center text-light mt-5">
@@ -48,10 +47,7 @@
     </div>
 
     <!-- ---NAVBAR--- -->
-    <nav
-      class="navbar navbar-expand-sm navbar-dark sticky-top"
-      style="background-color: #0b6d24"
-    >
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top navbar-main">
       <a class="navbar-brand" href="#">il Salice</a>
       <button
         class="navbar-toggler"
@@ -159,11 +155,10 @@
       <!-- ---USUAL CONTENT--- -->
       <div class="container-xl text-dark text-justify">
         <div
-          class="row mt-5 py-5 my-3 rounded shadow"
-          style="background-color: #d2ffe0"
+          class="row mt-5 py-5 my-3 rounded shadow content-div content-div--hidden"
         >
           <div class="col-md-8">
-            <h5 style="color: darkgreen">CHI SIAMO</h5>
+            <h5>CHI SIAMO</h5>
             <p>
               <em>Il Salice</em> nasce dalla volontà di due amici di lavorare
               insieme per portare il trattamento e la ricerca in osteopatia
@@ -195,8 +190,7 @@
         <hr />
 
         <div
-          class="row py-5 my-3 rounded shadow"
-          style="background-color: white"
+          class="row py-5 my-3 rounded shadow content-div content-div--hidden"
         >
           <div class="col-md-4">
             <img
@@ -207,7 +201,7 @@
             />
           </div>
           <div class="col-md-8">
-            <h5 style="color: forestgreen">COSA POSSIAMO FARE PER TE</h5>
+            <h5>COSA POSSIAMO FARE PER TE</h5>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
             tenetur ab veniam minima aliquam quia nisi voluptate nemo
             accusantium ipsa, necessitatibus in qui molestias iste adipisci sit.
@@ -216,11 +210,10 @@
         </div>
         <hr />
         <div
-          class="row py-5 my-3 rounded shadow"
-          style="background-color: #d2ffe0"
+          class="row py-5 my-3 rounded shadow content-div content-div--hidden"
         >
           <div class="col-md-8">
-            <h5 style="color: darkgreen">COME SI SVOLGE LA TERAPIA</h5>
+            <h5>COME SI SVOLGE LA TERAPIA</h5>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, a
             quasi, vitae eligendi temporibus cupiditate voluptatum illum, beatae
             necessitatibus earum facilis quod perspiciatis quo accusamus?

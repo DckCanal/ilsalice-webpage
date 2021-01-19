@@ -1,0 +1,37 @@
+:root {
+  --odd-paragraph-bg: #d2ffe0;
+  --even-paragraph-bg: #ffffff;
+  --odd-title: darkgreen;
+  --even-title: forestgreen;
+}
+hr {
+  background-color: rgb(0, 116, 6);
+}
+body {
+  background-color: #e5e7e4;
+}
+nav {
+  background-color: #0b6d24;
+}
+.odd {
+  background-color: var(--odd-paragraph-bg);
+}
+.odd h5 {
+  color: var(--odd-title);
+}
+.even {
+  background-color: var(--even-paragraph-bg);
+}
+.even h5 {
+  color: var(--even-title);
+}
+.content-div {
+  transition: transform 1s, opacity 2s;
+}
+.content-div--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+.nav-item {
+  height: 40px;
+}
