@@ -16,6 +16,9 @@ body {
 nav {
   background-color: #0b6d24;
 }
+.hidden {
+  display: none;
+}
 .odd {
   background-color: var(--odd-paragraph-bg);
 }

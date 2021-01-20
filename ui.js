@@ -57,6 +57,10 @@ covidBtn.addEventListener("click", function (e) {
   // e.target.closest(".covid-alert").style.display = "none";
   e.target.closest(".covid-alert").style.opacity = 0;
   e.target.closest(".covid-alert").style.transform = "translateY(-8rem)";
-  document.querySelector(".container-xl").style.transform =
-    "translateY(-16rem)";
+  // document.querySelector(".container-xl").style.transform =
+  //   "translateY(-16rem)";
+  setTimeout(
+    () => e.target.closest(".covid-alert").classList.add("hidden"),
+    1000
+  );
 });
