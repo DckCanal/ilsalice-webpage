@@ -3,6 +3,7 @@ const navBtn = document.querySelector(".navbar-toggler");
 const navbar = document.querySelector(".navbar-main");
 const navItems = document.querySelectorAll(".nav-item");
 const brand = document.querySelector(".navbar-brand");
+const covidBtn = document.querySelector(".btn-covid-alert");
 let navMenuHeight = 40 * navItems.length;
 let navExpanded = false;
 
@@ -49,4 +50,13 @@ navBtn.addEventListener("click", () => {
 brand.addEventListener("click", (e) => {
   e.preventDefault();
   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+});
+
+// ------ Remove covid alert on user's confirm -----------------
+covidBtn.addEventListener("click", function (e) {
+  // e.target.closest(".covid-alert").style.display = "none";
+  e.target.closest(".covid-alert").style.opacity = 0;
+  e.target.closest(".covid-alert").style.transform = "translateY(-8rem)";
+  document.querySelector(".container-xl").style.transform =
+    "translateY(-16rem)";
 });
