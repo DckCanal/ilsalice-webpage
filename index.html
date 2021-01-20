@@ -66,17 +66,18 @@
             <a class="nav-link active" href="#">Home</a>
           </li> -->
           <li class="nav-item">
-            <a class="nav-link" href="#">Dove ci troviamo</a>
+            <a class="nav-link" href="#" data-to="map">Dove ci troviamo</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contatti</a>
+            <a class="nav-link" href="#" data-to="contacts">Contatti</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Approfondimenti</a>
+            <a class="nav-link" href="#" data-to="blog">Approfondimenti</a>
           </li>
         </ul>
       </div>
     </nav>
+    <div class="home-page page">
     <!-- ---CAROUSEL--- -->
     <div class="container-sm text-center mt-4 mb-4" style="max-width: 800px">
       <!-- <h3>
@@ -166,8 +167,8 @@
             <p>
               <em>Il Salice</em> nasce dalla volontà di due amici di lavorare
               insieme per portare il trattamento e la ricerca in osteopatia
-              anche a San Giovanni in Marignano. Entrambi massofisioterapisti,
-              Marco e Giacomo si sono specializzati nell’esecuzione di tecniche
+              anche a <a class="text-link" href="#" data-to="map">San Giovanni in Marignano</a>. Entrambi massofisioterapisti,
+              <a class="text-link" href="#" data-to="contacts" data-contact="marco">Marco</a> e <a class="text-link" href="#" data-to="contacts" data-contact="giacomo">Giacomo</a> si sono specializzati nell’esecuzione di tecniche
               e manovre osteopatiche, tra le quali ad esempio il
               <strong>trattamento fasciale</strong> ed il
               <strong>cranio sacrale</strong>.
@@ -179,7 +180,7 @@
             </p>
             <p>
               Puoi prenotare un appuntamento chiamando o mandando un messaggio
-              ai numeri che trovi nella <a href="#">pagina dei contatti.</a>
+              ai numeri che trovi nella <a class="text-link" href="#" data-to="contacts">pagina dei contatti.</a>
             </p>
           </div>
           <div class="col-md-4">
@@ -228,7 +229,7 @@
             <p>Se desideri saperne di più sull'approccio osteopatico a vari problemi, puoi trovare del materiale utile
               nella pagina degli approfondimenti!
             </p>
-            <p><a href="#">Scopri di più!</a></p>
+            <p><a class="text-link" href="#" data-to="blog">Scopri di più!</a></p>
           </div>
         </div>
         <hr />
@@ -337,6 +338,10 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="map hidden page"><h1>Map page!</h1></div>
+  <div class="contacts hidden page"><h1>Contact page!</h1></div>
+  <div class="blog hidden page"><h1>Blog page!</h1></div>
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

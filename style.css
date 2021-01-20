@@ -45,3 +45,6 @@ nav {
 /* .btn-covid-alert {
   margin-left: auto;
 } */
+.page {
+  min-height: 100vh;
+}
