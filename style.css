@@ -48,3 +48,65 @@ nav {
 .page {
   min-height: 100vh;
 }
+
+/* NEW */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    linear-gradient(rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.9)),
+    url(images/studio.JPG);
+  background-position: center;
+  background-size: coved;
+  height: 100vh;
+}
+.hero-text {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  color: #fff;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 240%;
+  font-family: "Lato", "Arial", sans-serif;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  text-transform: uppercase;
+}
+h4 {
+  font-weight: 300;
+  font-size: 160%;
+  font-family: "Lato", "Arial", sans-serif;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  /* text-transform: uppercase; */
+}
+.btn {
+  display: inline-block;
+  color: #fff;
+  padding: 10px 25px;
+  margin-right: 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: background-color 0.2s;
+}
+.btn-main:link,
+.btn-main:visited {
+  background-color: #2980b9;
+}
+.btn-main:hover,
+.btn-main:active {
+  background-color: #20638f;
+}
