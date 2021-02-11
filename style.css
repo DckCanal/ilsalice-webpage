@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --odd-paragraph-bg: #d2ffe0;
   --even-paragraph-bg: #ffffff;
   --odd-title: darkgreen;
@@ -41,13 +41,13 @@ nav {
 }
 .nav-item {
   height: 40px;
-}
+}*/
 /* .btn-covid-alert {
   margin-left: auto;
 } */
-.page {
+/*.page {
   min-height: 100vh;
-}
+} */
 
 /* NEW */
 * {
@@ -69,22 +69,89 @@ header {
   background-size: coved;
   height: 100vh;
 }
+.row {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1140px;
+}
+.hidden {
+  display: none;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background-color: #fff;
+  z-index: 10;
+}
 .hero-text {
   position: absolute;
   bottom: 10%;
-  left: 10%;
+  left: 5%;
   color: #fff;
 }
 
-h1 {
+.btn-container {
+  /* margin-top: 150px; */
+  /* position: absolute; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-navbar {
+  color: #fff;
+  background-color: #2980b9;
+  padding: 10px 5px;
+  font-size: 70%;
+}
+.main-navbar a:link,
+.main-navbar a:visited {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 5px;
+  transition: border-bottom 0.2s;
+}
+.main-navbar a:hover,
+.main-navbar a:active {
+  /* background-color: #20638f; */
+  border-bottom: 2px solid white;
+}
+.main-navbar li {
+  display: inline-block;
+  margin-right: 15px;
+}
+.main-navbar ul {
+  float: right;
+}
+a {
+  transition: background-color 0.2s;
+}
+header h1 {
   font-weight: 300;
   font-size: 240%;
   font-family: "Lato", "Arial", sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   word-spacing: 4px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
-h4 {
+header h4 {
   font-weight: 300;
   font-size: 160%;
   font-family: "Lato", "Arial", sans-serif;
@@ -96,11 +163,10 @@ h4 {
   display: inline-block;
   color: #fff;
   padding: 10px 25px;
-  margin-right: 20px;
-  margin-top: 20px;
+  margin: 10px 20px;
+  /* margin-top: 20px; */
   text-decoration: none;
   border-radius: 200px;
-  transition: background-color 0.2s;
 }
 .btn-main:link,
 .btn-main:visited {
@@ -109,4 +175,25 @@ h4 {
 .btn-main:hover,
 .btn-main:active {
   background-color: #20638f;
+}
+
+main section h3 {
+  text-transform: uppercase;
+  font-size: 150%;
+  font-weight: 300;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+  text-align: center;
+  margin: 50px 0;
+}
+main section h4 {
+  font-size: 120%;
+  font-weight: 300;
+  margin: 30px 0;
+  text-transform: uppercase;
+}
+main section h5 {
+  font-size: 100%;
+  font-weight: 300;
+  margin: 20px 0;
 }
