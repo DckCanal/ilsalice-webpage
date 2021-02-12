@@ -8,11 +8,8 @@ const header = document.querySelector("header");
 const navbar = document.querySelector(".main-navbar");
 const navLinks = navbar.querySelectorAll(".nav-link");
 const logoWrapper = document.querySelector(".logo-wrapper");
-// ---- SECTIONS ----
-// const whoSec = document.querySelector(".who");
-// const whatIsSec = document.querySelector(".what-is");
-// const whatDoSec = document.querySelector(".what-do");
-// const whereSec = document.querySelector(".where");
+const btnContact = document.querySelector(".btn-contact");
+const btnMap = document.querySelector(".btn-map");
 
 // ---- Change navbar behaviour ----
 const opt = {
@@ -50,10 +47,16 @@ navbar.addEventListener("click", (e) => {
   const targetSec = document.getElementById(id);
   targetSec.scrollIntoView({ behavior: "smooth" });
 });
-// logoWrapper.querySelector("a").addEventListener("click", (e) => {
-//   e.preventDefault();
-//   header.scrollIntoView({ behavior: "smooth" });
-// });
+
+// ---- header buttons ----
+btnContact.addEventListener("click", (e) => {
+  e.preventDefault();
+  document.querySelector(".who").scrollIntoView({ behavior: "smooth" });
+});
+btnMap.addEventListener("click", (e) => {
+  e.preventDefault();
+  document.querySelector(".where").scrollIntoView({ behavior: "smooth" });
+});
 
 // ---- TAB component ----
 tabControl.addEventListener("click", (e) => {
