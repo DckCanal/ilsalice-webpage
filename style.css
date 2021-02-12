@@ -101,6 +101,22 @@ header {
   float: left;
   padding: 0 15px;
 }
+.logo-img {
+  width: 1.5rem;
+  display: inline-block;
+  margin-left: 4px;
+  margin-top: 4px;
+
+  /* padding: 8px 8px; */
+}
+.logo-wrapper {
+  background-color: #fff;
+  border-radius: 200px;
+  /* display: inline-block; */
+  width: 2rem;
+  height: 2rem;
+  float: left;
+}
 .tab-content {
   padding: 0 45px;
   /* position: absolute;
@@ -325,7 +341,8 @@ main section h5 {
 }
 .tab-btn-active {
   border-width: 2px 2px 2px 2px;
-  border-color: #6dde9d;
+  /* border-color: #6dde9d; */
+  border-color: #20638f;
   border-style: solid;
   border-radius: 15px 15px 0 0;
   border-bottom: 2px solid #fff;
@@ -357,5 +374,14 @@ main section h5 {
 }
 .tab-control {
   margin-left: 40px;
-  border-bottom: 2px solid #6dde9d;
+  /* border-bottom: 2px solid #6dde9d; */
+  border-bottom: 2px solid #20638f;
+}
+.scroll-btn {
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  width: 3%;
+  border-radius: 200px;
+  background-color: #2980b9;
 }

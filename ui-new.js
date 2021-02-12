@@ -6,7 +6,8 @@ const tabButtons = document.querySelectorAll(".tab-btn");
 const tabControl = document.querySelector(".tab-control");
 const header = document.querySelector("header");
 const navbar = document.querySelector(".main-navbar");
-const navLinks = navbar.querySelectorAll("a");
+const navLinks = navbar.querySelectorAll(".nav-link");
+const logoWrapper = document.querySelector(".logo-wrapper");
 // ---- SECTIONS ----
 // const whoSec = document.querySelector(".who");
 // const whatIsSec = document.querySelector(".what-is");
@@ -22,6 +23,7 @@ const intObs = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) {
       navbar.classList.add("nav-on-header");
       navbar.classList.remove("nav-on-main");
+      logoWrapper.style["background-color"] = "transparent";
       navLinks.forEach((link) => {
         link.classList.add("on-header");
         link.classList.remove("on-main");
@@ -29,6 +31,7 @@ const intObs = new IntersectionObserver((entries) => {
     } else {
       navbar.classList.add("nav-on-main");
       navbar.classList.remove("nav-on-header");
+      logoWrapper.style["background-color"] = "#fff";
       navLinks.forEach((link) => {
         link.classList.add("on-main");
         link.classList.remove("on-header");
@@ -38,7 +41,7 @@ const intObs = new IntersectionObserver((entries) => {
 }, opt);
 intObs.observe(header);
 
-// ---- navbar links ----
+// ---- navbar links and logo link----
 navbar.addEventListener("click", (e) => {
   e.preventDefault();
   const link = e.target.closest("a");
@@ -47,6 +50,10 @@ navbar.addEventListener("click", (e) => {
   const targetSec = document.getElementById(id);
   targetSec.scrollIntoView({ behavior: "smooth" });
 });
+// logoWrapper.querySelector("a").addEventListener("click", (e) => {
+//   e.preventDefault();
+//   header.scrollIntoView({ behavior: "smooth" });
+// });
 
 // ---- TAB component ----
 tabControl.addEventListener("click", (e) => {

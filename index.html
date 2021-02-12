@@ -28,20 +28,32 @@
     />
   </head>
   <body>
-    <header>
+    <header id="head">
       <nav class="main-navbar nav-on-header">
-        <img src="" alt="logo" />
+        <div class="logo-wrapper">
+          <a href="#" data-for="head" class="nav-logo">
+            <img src="images/icons/logo.svg" alt="logo" class="logo-img"
+          /></a>
+        </div>
         <ul>
-          <li><a href="#" class="on-header" data-for="sec1">Chi siamo</a></li>
           <li>
-            <a href="#" class="on-header" data-for="sec2"
+            <a href="#" class="on-header nav-link" data-for="sec1">Chi siamo</a>
+          </li>
+          <li>
+            <a href="#" class="on-header nav-link" data-for="sec2"
               >Il trattamento osteopatico</a
             >
           </li>
           <li>
-            <a href="#" class="on-header" data-for="sec3">Cosa facciamo</a>
+            <a href="#" class="on-header nav-link" data-for="sec3"
+              >Cosa facciamo</a
+            >
           </li>
-          <li><a href="#" class="on-header" data-for="sec4">Dove siamo</a></li>
+          <li>
+            <a href="#" class="on-header nav-link" data-for="sec4"
+              >Dove siamo</a
+            >
+          </li>
         </ul>
       </nav>
 
@@ -83,7 +95,7 @@
         <div class="row tabular-row">
           <div class="col-1-of-3">
             <img
-              src="images/icons/cos-e.svg"
+              src="images/icons/cos-e-blue.svg"
               alt="what is icon"
               class="row-icon"
             />
@@ -102,7 +114,7 @@
         <div class="row reverse-row tabular-row">
           <div class="col-1-of-3">
             <img
-              src="images/icons/per-chi.svg"
+              src="images/icons/per-chi-blue.svg"
               alt="per chi icon"
               class="row-icon"
             />
@@ -117,7 +129,7 @@
         <div class="row tabular-row">
           <div class="col-1-of-3">
             <img
-              src="images/icons/a-cosa-serve.svg"
+              src="images/icons/a-cosa-serve-blue.svg"
               alt="a cosa serve icon"
               class="row-icon"
             />
@@ -226,6 +238,9 @@
     <div class="overlay hidden"></div>
     <div class="modal hidden">
       <p>Contatti di Marco e Giacomo</p>
+    </div>
+    <div class="scroll-btn hidden">
+      <a href="#"><img src="images/icons/down.svg" alt="" /></a>
     </div>
 
     <!-- ---HEADER--- -->
