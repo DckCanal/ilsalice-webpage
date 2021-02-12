@@ -29,19 +29,30 @@
   </head>
   <body>
     <header>
-      <nav class="main-navbar">
+      <nav class="main-navbar nav-on-header">
         <img src="" alt="logo" />
         <ul>
-          <li><a href="#">Chi siamo</a></li>
-          <li><a href="#">L'osteopatia</a></li>
-          <li><a href="#">Cosa facciamo</a></li>
-          <li><a href="#">Dove siamo</a></li>
+          <li><a href="#" class="on-header" data-for="sec1">Chi siamo</a></li>
+          <li>
+            <a href="#" class="on-header" data-for="sec2"
+              >Il trattamento osteopatico</a
+            >
+          </li>
+          <li>
+            <a href="#" class="on-header" data-for="sec3">Cosa facciamo</a>
+          </li>
+          <li><a href="#" class="on-header" data-for="sec4">Dove siamo</a></li>
         </ul>
       </nav>
 
       <div class="btn-container row">
-        <a class="btn btn-main" href="#">CHIAMA</a
-        ><a class="btn btn-main" href="#">MAPPA</a>
+        <a class="btn btn-main" href="#">
+          <img src="images/icons/contatti.svg" alt="" class="btn-icon" />
+          <p>CONTATTI</p></a
+        ><a class="btn btn-main" href="#">
+          <img src="images/icons/mappa.svg" alt="" class="btn-icon" />
+          <p>MAPPA</p>
+        </a>
       </div>
       <div class="hero-text">
         <h1>il Salice</h1>
@@ -49,7 +60,7 @@
       </div>
     </header>
     <main>
-      <section class="who row">
+      <section class="who row" id="sec1">
         <h3>Chi siamo</h3>
         <p>
           <em>Il Salice</em> nasce dalla volontà di due amici di lavorare
@@ -60,56 +71,139 @@
           <strong>cranio sacrale</strong>.
         </p>
         <div class="col-1-of-2">
-          <h4 class="center-title">Giacomo Muccioli</h4>
-        </div>
-        <div class="col-1-of-2">
           <h4 class="center-title">Marco De Canal</h4>
         </div>
+        <div class="col-1-of-2">
+          <h4 class="center-title">Giacomo Muccioli</h4>
+        </div>
       </section>
-      <section class="what-is row">
+      <!-- SEZIONE 2: IL TRATTAMENTO OSTEOPATICO -->
+      <section class="what-is row" id="sec2">
         <h3>Il trattamento osteopatico</h3>
-        <div class="col-1-of-3">
-          <h4 class="center-title">Cos'è</h4>
+        <div class="row tabular-row">
+          <div class="col-1-of-3">
+            <img
+              src="images/icons/cos-e.svg"
+              alt="what is icon"
+              class="row-icon"
+            />
+            <h4 class="center-title">Cos'è</h4>
+          </div>
+          <div class="col-2-of-3">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+              quibusdam quae porro doloremque fugiat hic totam deserunt pariatur
+              quasi sit consequatur, nostrum ducimus ullam harum quam eius
+              maiores quos dolores!
+            </p>
+          </div>
         </div>
-        <div class="col-1-of-3">
-          <h4 class="center-title">A chi si rivolge</h4>
-          <h5>Adulti</h5>
-          <h5>Anziani</h5>
-          <h5>Sportivi</h5>
+
+        <div class="row reverse-row tabular-row">
+          <div class="col-1-of-3">
+            <img
+              src="images/icons/per-chi.svg"
+              alt="per chi icon"
+              class="row-icon"
+            />
+            <h4 class="center-title">Per chi</h4>
+          </div>
+          <div class="col-2-of-3">
+            <h5>Adulti</h5>
+            <h5>Anziani</h5>
+            <h5>Sportivi</h5>
+          </div>
         </div>
-        <div class="col-1-of-3">
-          <h4 class="center-title">I problemi più comuni</h4>
-          <p>
-            Sono tanti i problemi di salute che ogni giorno incontriamo in
-            studio, spesso molto diversi tra loro. I più frequenti sono:
-          </p>
-          <ul>
-            <li>
-              <strong>cervicalgia</strong>: dolore al collo che può irradiarsi
-              dalle spalle fino alle mani, talvolta con formicolii;
-            </li>
-            <li>
-              <strong>lombalgia</strong>: basso mal di schiena a cui si
-              associano talvolta problematiche intestinali o alle gambe;
-            </li>
-            <li>
-              <strong>cefalee ed emicranie</strong>: varie forme di mal di testa
-              che a volte durano anche per più giorni;
-            </li>
-            <li>
-              <strong>sciatalgie</strong>: bruciore persistente oppure
-              sensazioni di scosse intense nel nervo sciatico;
-            </li>
-            <li>
-              <strong>blocchi articolari</strong>: chiamati anche "colpi della
-              strega", dolorosi ed invalidanti.
-            </li>
-          </ul>
+        <div class="row tabular-row">
+          <div class="col-1-of-3">
+            <img
+              src="images/icons/a-cosa-serve.svg"
+              alt="a cosa serve icon"
+              class="row-icon"
+            />
+            <h4 class="center-title">A cosa serve</h4>
+          </div>
+          <div class="col-2-of-3">
+            <p>
+              Sono tanti i problemi di salute che ogni giorno incontriamo in
+              studio, spesso molto diversi tra loro. I più frequenti sono:
+            </p>
+            <ul>
+              <li>
+                <strong>cervicalgia</strong>: dolore al collo che può irradiarsi
+                dalle spalle fino alle mani, talvolta con formicolii;
+              </li>
+              <li>
+                <strong>lombalgia</strong>: basso mal di schiena a cui si
+                associano talvolta problematiche intestinali o alle gambe;
+              </li>
+              <li>
+                <strong>cefalee ed emicranie</strong>: varie forme di mal di
+                testa che a volte durano anche per più giorni;
+              </li>
+              <li>
+                <strong>sciatalgie</strong>: bruciore persistente oppure
+                sensazioni di scosse intense nel nervo sciatico;
+              </li>
+              <li>
+                <strong>blocchi articolari</strong>: chiamati anche "colpi della
+                strega", dolorosi ed invalidanti.
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
-      <section class="what-do row">
+      <section class="what-do row" id="sec3">
         <h3>Cosa facciamo</h3>
-        <div class="col-1-of-3">
+
+        <h4 class="center-title">Come si svolge la terapia</h4>
+        <div class="row tab-container">
+          <div class="tab-control">
+            <a href="" class="tab-btn tab-btn-active" data-tab-id="tab1"
+              ><img src="images/icons/valutazione.svg" /></a
+            ><a href="" class="tab-btn tab-btn-inactive" data-tab-id="tab2"
+              ><img src="images/icons/trattamento.svg" /></a
+            ><a href="" class="tab-btn tab-btn-inactive" data-tab-id="tab3"
+              ><img src="images/icons/esercizi.svg"
+            /></a>
+          </div>
+          <div class="tab-content tab-content-active" id="tab1">
+            <h5 class="center-title">Valutazione</h5>
+            <p>
+              Durante il primo appuntamento, di circa un'ora, viene fatta una
+              <strong>valutazione generale</strong>, per raccogliere le
+              informazioni necessarie ad impostare il successivo iter
+              terapeutico. La valutazione riguarda il corpo nella sua totalità,
+              secondo un <strong>approccio olistico</strong>: questo permette di
+              individuare le cause dei disturbi anche quando queste si trovano
+              in zone distanti o apparentemente scollegate.
+            </p>
+          </div>
+
+          <div class="tab-content tab-content-inactive" id="tab2">
+            <h5 class="center-title">Intervento</h5>
+            <p>
+              Gli appuntamenti successivi hanno una durata di circa 45-50
+              minuti, durante i quali si procede al trattamento manuale vero e
+              proprio. Ogni seduta si conclude con una breve verifica per
+              valutare i risultati ottenuti. Tipicamente un ciclo di trattamenti
+              comprende dai 3 ai 6 appuntamenti, anche se questo può variare
+              molto in base al soggetto e alla problematica in questione!
+            </p>
+          </div>
+          <div class="tab-content tab-content-inactive" id="tab3">
+            <h5 class="center-title">Esercizi</h5>
+            <p>
+              Un supporto importante al lavoro terapeutico che viene fatto in
+              studio sono gli <strong>esercizi rieducativi</strong> o di
+              <strong>allungamento</strong>, da svolgere quotidianamente a casa.
+              Questi vengono proposti in maniera personalizzata per ogni
+              paziente, e verificati in studio di volta in volta.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
           <h4 class="center-title">Tipologie di trattamento</h4>
           <p>
             Le metodologie di trattamento che adottiamo nel nostro studio
@@ -124,45 +218,8 @@
             <li>rieducazione e riequilibrio posturale</li>
           </ul>
         </div>
-        <div class="col-2-of-3 tab-container">
-          <h4 class="center-title">Come si svolge la terapia</h4>
-          <div class="tab-content" data-tab-id="1">
-            <h5 class="center-title">Valutazione</h5>
-            <p>
-              Durante il primo appuntamento, di circa un'ora, viene fatta una
-              <strong>valutazione generale</strong>, per raccogliere le
-              informazioni necessarie ad impostare il successivo iter
-              terapeutico. La valutazione riguarda il corpo nella sua totalità,
-              secondo un <strong>approccio olistico</strong>: questo permette di
-              individuare le cause dei disturbi anche quando queste si trovano
-              in zone distanti o apparentemente scollegate.
-            </p>
-          </div>
-
-          <div class="tab-content" data-tab-id="2">
-            <h5 class="center-title">Intervento</h5>
-            <p>
-              Gli appuntamenti successivi hanno una durata di circa 45-50
-              minuti, durante i quali si procede al trattamento manuale vero e
-              proprio. Ogni seduta si conclude con una breve verifica per
-              valutare i risultati ottenuti. Tipicamente un ciclo di trattamenti
-              comprende dai 3 ai 6 appuntamenti, anche se questo può variare
-              molto in base al soggetto e alla problematica in questione!
-            </p>
-          </div>
-          <div class="tab-content" data-tab-id="3">
-            <h5 class="center-title">Esercizi</h5>
-            <p>
-              Un supporto importante al lavoro terapeutico che viene fatto in
-              studio sono gli <strong>esercizi rieducativi</strong> o di
-              <strong>allungamento</strong>, da svolgere quotidianamente a casa.
-              Questi vengono proposti in maniera personalizzata per ogni
-              paziente, e verificati in studio di volta in volta.
-            </p>
-          </div>
-        </div>
       </section>
-      <section class="where row">
+      <section class="where row" id="sec4">
         <h3>Dove siamo</h3>
       </section>
     </main>
