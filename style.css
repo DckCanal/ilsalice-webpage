@@ -392,3 +392,6 @@ main section h5 {
   border-radius: 200px;
   background-color: #2980b9;
 }
+.map-container {
+  height: 75vh;
+}
