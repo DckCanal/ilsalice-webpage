@@ -319,7 +319,7 @@ main section h5 {
 }
 
 section > p {
-  padding: 0 25px;
+  padding: 0 5%;
 }
 
 .what-is p {
@@ -397,5 +397,5 @@ section > p {
   background-color: #2980b9;
 }
 .map-container {
-  height: 75vh;
+  height: 85vh;
 }
