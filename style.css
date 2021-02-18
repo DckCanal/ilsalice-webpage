@@ -246,6 +246,7 @@ main ul {
 }
 main ul li {
   margin-top: 10px;
+  padding-left: 15px;
 }
 header h1 {
   font-weight: 300;
@@ -315,6 +316,11 @@ main section h5 {
   letter-spacing: 5px;
   margin: 20px 0;
   text-transform: uppercase;
+}
+
+.what-is p {
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .row-icon {
