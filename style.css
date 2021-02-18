@@ -318,6 +318,10 @@ main section h5 {
   text-transform: uppercase;
 }
 
+section > p {
+  padding: 0 25px;
+}
+
 .what-is p {
   margin-bottom: 15px;
   margin-top: 15px;
