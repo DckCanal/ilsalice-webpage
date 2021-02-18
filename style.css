@@ -73,6 +73,9 @@ header {
   left: 0; */
   transition: color 0.5s;
 }
+.tab-content p {
+  line-height: 145%;
+}
 .tab-container {
   /* overflow: hidden; */
   position: relative;
@@ -273,10 +276,12 @@ section > p {
 .what-is p {
   margin-bottom: 15px;
   margin-top: 15px;
+  line-height: 135%;
 }
 
 .who p {
   margin-bottom: 40px;
+  line-height: 145%;
 }
 
 .row-icon {
