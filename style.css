@@ -118,7 +118,8 @@ header {
   float: left;
 }
 .tab-content {
-  padding: 0 45px;
+  padding: 0 55px;
+  margin-top: 50px;
   /* position: absolute;
   top: 70;
   left: 0; */
