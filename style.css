@@ -365,3 +365,24 @@ section > p {
 }
 .contact-info {
 }
+
+ion-icon {
+  font-size: 64px;
+  --ionicon-stroke-width: 16px;
+}
+.what-is ion-icon {
+  width: 64px;
+  display: block;
+  margin: 0 auto 0 auto;
+  color: #20638f;
+}
+.tab-control ion-icon {
+  color: #444;
+}
+header ion-icon {
+  font-size: 100%;
+  --ionicon-stroke-width: 32px;
+  line-height: 100%;
+  vertical-align: middle;
+  margin-top: -5px;
+}
