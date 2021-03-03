@@ -25,6 +25,7 @@ main ul li {
 section {
   margin-top: 40px;
   padding-top: 80px;
+  width: 100%;
 }
 
 main section h3 {
@@ -41,7 +42,6 @@ main section h4 {
   letter-spacing: 3px;
   font-weight: 300;
   margin: 20px 0;
-  /* text-transform: uppercase; */
 }
 main section h5 {
   font-size: 90%;
@@ -65,7 +65,6 @@ ion-icon {
   color: #fff;
   padding: 10px 25px;
   margin: 10px 20px;
-  /* margin-top: 20px; */
   text-decoration: none;
   border-radius: 200px;
   width: 185px;
@@ -161,7 +160,8 @@ header {
     linear-gradient(rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.9)),
     url(images/studio.JPG);
   background-position: center;
-  background-size: coved;
+  background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
 }
 
@@ -171,7 +171,6 @@ header h1 {
   font-family: "Lato", "Arial", sans-serif;
   letter-spacing: 1px;
   word-spacing: 4px;
-  /* text-transform: uppercase; */
 }
 header h4 {
   font-weight: 300;
@@ -179,7 +178,6 @@ header h4 {
   font-family: "Lato", "Arial", sans-serif;
   letter-spacing: 1px;
   word-spacing: 4px;
-  /* text-transform: uppercase; */
 }
 header ion-icon {
   font-size: 100%;
@@ -275,6 +273,9 @@ header ion-icon {
 .contact-info {
 }
 /* --- SECTION WHAT IS --- */
+.what-is {
+  background-color: rgb(240, 240, 240);
+}
 .tabular-row {
   padding: 25px 25px;
   border-bottom: 1px solid #ccc;
@@ -315,7 +316,6 @@ header ion-icon {
 }
 .tab-btn-active {
   border-width: 2px 2px 2px 2px;
-  /* border-color: #6dde9d; */
   border-color: #20638f;
   border-style: solid;
   border-radius: 15px 15px 0 0;
@@ -347,6 +347,9 @@ header ion-icon {
 }
 
 /* --- SECTION WHERE --- */
+.where {
+  background-color: rgb(240, 240, 240);
+}
 .map-container {
   height: 85vh;
 }
