@@ -10,6 +10,7 @@ html {
   font-size: 20px;
   font-weight: 300;
   text-rendering: optimizeLegibility;
+  color: #444;
 }
 
 a {
@@ -295,6 +296,9 @@ header ion-icon {
   color: #20638f;
 }
 /* --- SECTION WHAT DO --- */
+.what-do ion-icon {
+  transition: color 0.5s;
+}
 .tab-content {
   padding: 0 55px;
   margin-top: 50px;
@@ -310,7 +314,6 @@ header ion-icon {
 .tab-btn {
   display: inline-block;
   padding: 25px 25px;
-  transition: border-color 0.5s;
   margin-left: -2px;
   margin-bottom: -2px;
 }
@@ -320,6 +323,10 @@ header ion-icon {
   border-style: solid;
   border-radius: 15px 15px 0 0;
   border-bottom: 2px solid #fff;
+  transition: border-color 0.5s;
+}
+.tab-btn-active ion-icon {
+  color: #444;
 }
 .tab-btn-inactive {
   border-width: 2px 2px 0 2px;
@@ -327,23 +334,22 @@ header ion-icon {
   border-style: solid;
   border-radius: 15px 15px 0 0;
 }
+.tab-btn-inactive ion-icon {
+  color: #888;
+}
 .tab-btn img {
   width: 50px;
   height: 50px;
 }
 .tab-content-inactive {
-  color: transparent;
   display: none;
 }
 .tab-content-active {
-  color: #000;
+  /* color: #000; */
 }
 .tab-control {
   margin-left: 40px;
   border-bottom: 2px solid #20638f;
-}
-.tab-control ion-icon {
-  color: #444;
 }
 
 /* --- SECTION WHERE --- */
