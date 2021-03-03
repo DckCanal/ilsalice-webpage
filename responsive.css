@@ -1,0 +1,88 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 15px;
+  }
+  section {
+    width: 97%;
+    margin: 15px 1.5% 0 1.5%;
+    padding-top: 20px;
+  }
+  header h1 {
+    font-weight: 400;
+  }
+  header h4 {
+    letter-spacing: normal;
+  }
+  main section h3 {
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+  }
+  main section h4 {
+    letter-spacing: normal;
+    word-spacing: 3px;
+    margin: 10px 0;
+  }
+  main section h5 {
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  header ion-icon {
+    --ionicon-stroke-width: 32px;
+    margin-top: -3px;
+  }
+  [class*="col-"] {
+    width: 100%;
+  }
+  .profile-img {
+    width: 150px;
+  }
+  .tabular-row {
+    padding: 10px 0 0 0;
+  }
+  .tab-control ion-icon {
+    font-size: 48px;
+  }
+  .tab-control {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .tab-control a {
+    width: 33.33%;
+    margin-left: 0;
+  }
+  .tab-content {
+    padding: 0 20px;
+  }
+  .tab-container {
+    margin-bottom: 30px;
+  }
+  .center-list li {
+    font-size: 100%;
+    letter-spacing: normal;
+    word-spacing: 2px;
+  }
+  .what-do .row .row:last-of-type {
+    padding-top: 10px;
+    background-color: rgb(240, 240, 240);
+  }
+  .where{
+      background-color: #fff;
+  }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
