@@ -67,9 +67,10 @@
     padding-top: 10px;
     background-color: rgb(240, 240, 240);
   }
-  .where{
-      background-color: #fff;
+  .where {
+    background-color: #fff;
   }
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
