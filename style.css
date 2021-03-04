@@ -98,14 +98,8 @@ ion-icon {
 .center-list li {
   text-decoration: none;
   text-transform: uppercase;
-<<<<<<< HEAD
-  letter-spacing: 3px;
-  font-weight: 400;
-  font-size: 80%;
-=======
   letter-spacing: normal;
   font-size: 100%;
->>>>>>> responsiveness
   margin-bottom: 15px;
   word-spacing: 2px;
 }
@@ -366,6 +360,7 @@ header ion-icon {
 }
 .tab-control a ion-icon {
   margin: 0 auto 0 auto;
+  font-size: 40px;
 }
 /* --- SECTION WHERE --- */
 
@@ -471,6 +466,10 @@ header ion-icon {
   .btn-container a {
     display: inline-block;
     margin: 0 20px;
+  }
+  .tab-control a ion-icon {
+    margin: 0 auto 0 auto;
+    font-size: 48px;
   }
 }
 
