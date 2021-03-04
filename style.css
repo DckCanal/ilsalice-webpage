@@ -96,6 +96,7 @@ ion-icon {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 3px;
+  font-weight: 400;
   font-size: 80%;
   margin-bottom: 15px;
 }
@@ -284,8 +285,12 @@ header ion-icon {
 .tabular-row:last-child {
   border-bottom: none;
 }
+.what-is ul {
+  margin-top: -25px;
+  margin-bottom: 35px;
+}
 .what-is p {
-  margin-bottom: 15px;
+  margin-bottom: 35px;
   margin-top: 15px;
   line-height: 135%;
 }
