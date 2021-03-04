@@ -1,3 +1,4 @@
+/* Extra small devices (phones, 600px and down) */
 /* --- GENERAL RULES --- */
 
 * {
@@ -7,7 +8,7 @@
 }
 html {
   font-family: "Lato", "Arial", sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 300;
   text-rendering: optimizeLegibility;
   color: #444;
@@ -24,8 +25,8 @@ main ul li {
   padding-left: 15px;
 }
 section {
-  margin-top: 40px;
-  padding-top: 80px;
+  margin: 0;
+  padding-top: 60px;
   width: 100%;
 }
 
@@ -33,23 +34,25 @@ main section h3 {
   text-transform: uppercase;
   font-size: 130%;
   font-weight: 300;
-  letter-spacing: 8px;
+  letter-spacing: 4px;
   word-spacing: 5px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 main section h4 {
   font-size: 110%;
-  letter-spacing: 3px;
-  font-weight: 300;
-  margin: 20px 0;
+  letter-spacing: normal;
+  word-spacing: 3px;
+  font-weight: 400;
+  margin: 10px 0;
 }
 main section h5 {
   font-size: 90%;
   font-weight: 300;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   margin: 20px 0;
   text-transform: uppercase;
+  text-align: center;
 }
 
 section > p {
@@ -95,9 +98,10 @@ ion-icon {
 .center-list li {
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 80%;
+  letter-spacing: normal;
+  font-size: 100%;
   margin-bottom: 15px;
+  word-spacing: 2px;
 }
 
 .hidden {
@@ -126,32 +130,15 @@ ion-icon {
 
 /* --- GRID --- */
 .row {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1140px;
+  margin: 0px 1.5% 0 1.5%;
 }
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
-
-.col-1-of-3 {
-  width: 33.33%;
-  float: left;
-  padding: 0 15px;
-}
-
-.col-2-of-3 {
-  width: 66.67%;
-  float: left;
-  padding: 0 15px;
-}
-
-.col-1-of-2 {
-  width: 50%;
-  float: left;
-  padding: 0 15px;
+[class*="col-"] {
+  width: 100%;
 }
 
 /* --- HEADER --- */
@@ -167,7 +154,7 @@ header {
 }
 
 header h1 {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 240%;
   font-family: "Lato", "Arial", sans-serif;
   letter-spacing: 1px;
@@ -177,7 +164,7 @@ header h4 {
   font-weight: 300;
   font-size: 160%;
   font-family: "Lato", "Arial", sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: normal;
   word-spacing: 4px;
 }
 header ion-icon {
@@ -185,7 +172,8 @@ header ion-icon {
   --ionicon-stroke-width: 32px;
   line-height: 100%;
   vertical-align: middle;
-  margin-top: -5px;
+  margin-top: -3px;
+  margin-right: 8px;
 }
 .hero-text {
   position: absolute;
@@ -263,9 +251,12 @@ header ion-icon {
 .who p {
   margin-bottom: 40px;
   line-height: 145%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .profile-img {
-  width: 300px;
+  width: 150px;
   height: auto;
   display: block;
   border-radius: 50%;
@@ -278,7 +269,8 @@ header ion-icon {
   background-color: rgb(240, 240, 240);
 }
 .tabular-row {
-  padding: 25px 25px;
+  /* padding: 20px 0 0 0; */
+  margin-bottom: 20px;
   border-bottom: 1px solid #ccc;
 }
 .tabular-row:last-child {
@@ -296,11 +288,15 @@ header ion-icon {
   color: #20638f;
 }
 /* --- SECTION WHAT DO --- */
+.what-do .row .row:last-of-type {
+  padding-top: 10px;
+  background-color: rgb(240, 240, 240);
+}
 .what-do ion-icon {
   transition: color 0.5s;
 }
 .tab-content {
-  padding: 0 55px;
+  padding: 0 20px;
   margin-top: 50px;
   transition: color 0.5s;
 }
@@ -309,7 +305,8 @@ header ion-icon {
 }
 .tab-container {
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
 .tab-btn {
   display: inline-block;
@@ -348,14 +345,137 @@ header ion-icon {
   /* color: #000; */
 }
 .tab-control {
-  margin-left: 40px;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
   border-bottom: 2px solid #20638f;
 }
-
+.tab-control a {
+  width: 33.33%;
+  text-align: center;
+}
+.tab-control a ion-icon {
+  margin: 0 auto 0 auto;
+}
 /* --- SECTION WHERE --- */
+
 .where {
-  background-color: rgb(240, 240, 240);
+  background-color: #fff;
 }
 .map-container {
   height: 85vh;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) {
+  html {
+    font-size: 18px;
+  }
+  section {
+    margin-top: 0;
+  }
+
+  .btn-container a {
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+  .row {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  [class*="col-"] {
+    width: 100%;
+  }
+  .tab-control a {
+    width: auto;
+    text-align: center;
+  }
+  .tab-control ion-icon {
+    font-size: 40px;
+  }
+  .main-navbar li {
+    margin: 10px 12px;
+  }
+  .profile-img {
+    width: 40%;
+    max-width: 250px;
+  }
+  .what-do .row .row:last-of-type {
+    padding-top: 10px;
+    background-color: #fff;
+  }
+  .what-do .center-text {
+    margin-top: 30px;
+  }
+  .where {
+    background-color: rgb(240, 240, 240);
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 20px;
+  }
+  header ion-icon {
+    margin-top: -4px;
+  }
+  .tab-control ion-icon {
+    font-size: 48px;
+  }
+  .what-do .center-text {
+    margin-top: 45px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  header h1 {
+    font-weight: 300;
+  }
+  header h4 {
+    letter-spacing: 1px;
+  }
+
+  .col-1-of-3 {
+    width: 33.33%;
+    float: left;
+    padding: 0 15px;
+  }
+
+  .col-2-of-3 {
+    width: 66.67%;
+    float: left;
+    padding: 0 15px;
+  }
+
+  .col-1-of-2 {
+    width: 50%;
+    float: left;
+    padding: 0 15px;
+  }
+  .btn-container {
+    text-align: center;
+  }
+  .btn-container a {
+    display: inline-block;
+    margin: 0 20px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .row {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+  }
+  ion-icon {
+    font-size: 64px;
+    --ionicon-stroke-width: 16px;
+  }
+  .what-do .center-text {
+    margin-top: 65px;
+  }
 }
