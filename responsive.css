@@ -5,8 +5,8 @@
   }
   section {
     width: 97%;
-    margin: 15px 1.5% 0 1.5%;
-    padding-top: 20px;
+    margin: 0;
+    padding-top: 60px;
   }
   header h1 {
     font-weight: 400;
@@ -22,6 +22,7 @@
     letter-spacing: normal;
     word-spacing: 3px;
     margin: 10px 0;
+    font-weight: 400;
   }
   main section h5 {
     text-align: center;
@@ -33,6 +34,9 @@
   }
   [class*="col-"] {
     width: 100%;
+  }
+  .row {
+    margin: 0px 1.5% 0 1.5%;
   }
   .profile-img {
     width: 150px;
