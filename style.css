@@ -268,7 +268,7 @@ header ion-icon {
   width: 300px;
   height: auto;
   display: block;
-  border-radius: 200px;
+  border-radius: 50%;
   margin: 40px auto 40px;
 }
 .contact-info {

@@ -78,16 +78,89 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  html {
+    font-size: 18px;
+  }
+  section {
+    margin-top: 0;
+  }
+  /* .btn-container {
+    position: inherit;
+    transform: none;
+    padding-top: 250px;
+    width: 60%;
+    margin: 0 20% 0 20%;
+  } */
+  .btn-container a {
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+  .row {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  [class*="col-"] {
+    width: 100%;
+  }
+  .tab-control ion-icon {
+    font-size: 40px;
+  }
+  .main-navbar li {
+    margin: 10px 12px;
+  }
+  .profile-img {
+    width: 40%;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  html {
+    font-size: 20px;
+  }
+  .tab-control ion-icon {
+    font-size: 48px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .col-1-of-3 {
+    width: 33.33%;
+    float: left;
+    padding: 0 15px;
+  }
+
+  .col-2-of-3 {
+    width: 66.67%;
+    float: left;
+    padding: 0 15px;
+  }
+
+  .col-1-of-2 {
+    width: 50%;
+    float: left;
+    padding: 0 15px;
+  }
+  .btn-container {
+    text-align: center;
+  }
+  .btn-container a {
+    display: inline-block;
+    margin: 0 20px;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .row {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+  }
+  ion-icon {
+    font-size: 64px;
+    --ionicon-stroke-width: 16px;
+  }
 }
