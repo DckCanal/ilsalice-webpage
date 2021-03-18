@@ -266,6 +266,12 @@ header ion-icon {
 }
 .contact-info {
 }
+.contact-card {
+  margin-bottom: 20px;
+}
+.social-logo {
+  width: 72px;
+}
 /* --- SECTION WHAT IS --- */
 .what-is {
   background-color: rgb(240, 240, 240);
