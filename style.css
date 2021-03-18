@@ -497,6 +497,10 @@ header ion-icon {
     float: left;
     padding: 0 15px;
   }
+  .no-giacomo {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
   .btn-container {
     text-align: center;
   }
