@@ -6,10 +6,13 @@ const tabButtons = document.querySelectorAll(".tab-btn");
 const tabControl = document.querySelector(".tab-control");
 const header = document.querySelector("header");
 const navbar = document.querySelector(".main-navbar");
+const toggleBtn = document.querySelector(".navbar-toggle-btn");
+const toggleIcon = document.querySelector(".navbar-toggle-btn ion-icon");
 const navLinks = navbar.querySelectorAll(".nav-link");
 const logoWrapper = document.querySelector(".logo-wrapper");
 const btnContact = document.querySelector(".btn-contact");
 const btnMap = document.querySelector(".btn-map");
+let navExpanded = false;
 
 // ---- Change navbar behaviour ----
 const opt = {
@@ -46,7 +49,32 @@ navbar.addEventListener("click", (e) => {
   const id = link.dataset["for"];
   const targetSec = document.getElementById(id);
   targetSec.scrollIntoView({ behavior: "smooth" });
+  compactNavbar();
 });
+
+// ------ navbar toggle button -----
+const expandNavbar = () => {
+  toggleIcon.classList.remove("rotate0");
+  toggleIcon.classList.add("rotate90");
+  navbar.classList.remove("navbar-min");
+  navbar.classList.add("navbar-max");
+  navExpanded = true;
+};
+const compactNavbar = () => {
+  toggleIcon.classList.remove("rotate90");
+  toggleIcon.classList.add("rotate0");
+  navbar.classList.remove("navbar-max");
+  navbar.classList.add("navbar-min");
+  navExpanded = false;
+};
+const toggleNavbar = () => {
+  if (navExpanded) {
+    compactNavbar();
+  } else {
+    expandNavbar();
+  }
+};
+toggleBtn.addEventListener("click", toggleNavbar);
 
 // ---- header buttons ----
 btnContact.addEventListener("click", (e) => {

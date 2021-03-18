@@ -71,7 +71,7 @@ ion-icon {
   margin: 10px 20px;
   text-decoration: none;
   border-radius: 200px;
-  width: 185px;
+  width: 192px;
   text-align: center;
 }
 .btn-main:link,
@@ -205,6 +205,11 @@ header ion-icon {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.btn-container a {
+  display: block;
+  text-align: center;
+  margin: 0 auto 20px auto;
+}
 
 /* --- NAVBAR --- */
 .logo-img {
@@ -228,15 +233,46 @@ header ion-icon {
   top: 0;
   left: 0;
   width: 100%;
-  height: 60px;
+  /* height: 60px; */
   z-index: 2;
   transition: background-color 0.2s;
+  transition: height 0.3s;
+  overflow: hidden;
+}
+.navbar-min {
+  height: 60px;
+}
+.navbar-max {
+  height: 190px;
 }
 .nav-on-header {
   color: #fff;
 }
 .nav-on-main {
   background-color: #219251;
+}
+.navbar-toggle {
+  float: right;
+  display: block;
+}
+.navbar-toggle-btn {
+  font-size: 220%;
+  text-align: center;
+  /* border: 1px solid green; */
+  border: none;
+  border-radius: 5px;
+  padding: 4px 8px;
+}
+.navbar-toggle-btn ion-icon {
+  margin: -5px 0 0 0;
+}
+.rotate0 {
+  transition: transform 0.2s;
+  transform: rotate(0);
+}
+.rotate90 {
+  transition: transform 0.2s;
+  transform: rotate(0.25turn);
 }
 .main-navbar a:link,
 .main-navbar a:visited {
@@ -258,11 +294,16 @@ header ion-icon {
   border-bottom: 2px solid #ffffff;
 }
 .main-navbar li {
-  display: inline-block;
-  margin: 10px 15px;
+  /* display: inline-block; */
+  margin: 0px 0px 0px;
+  text-align: center;
+  height: 30px;
 }
 .main-navbar ul {
-  float: right;
+  /* float: right; */
+  list-style: none;
+  margin-top: 60px;
+  width: 100%;
 }
 /* --- SECTION WHO --- */
 .who p {
@@ -407,14 +448,13 @@ header ion-icon {
     margin-top: 0;
   }
 
-  .btn-container a {
-    display: block;
-    margin: 0 auto 20px auto;
-  }
   .row {
     width: 96%;
     margin-left: 2%;
     margin-right: 2%;
+  }
+  .navbar-toggle {
+    display: none;
   }
   [class*="col-"] {
     width: 100%;
@@ -427,8 +467,15 @@ header ion-icon {
     font-size: 40px;
   }
   .main-navbar li {
+    display: inline-block;
     margin: 10px 12px;
   }
+  .main-navbar ul {
+    float: right;
+    margin-top: 0;
+    width: auto;
+  }
+
   .btn-border {
     width: 280px;
   }
