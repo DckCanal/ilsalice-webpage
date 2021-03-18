@@ -270,7 +270,9 @@ header ion-icon {
   margin-bottom: 20px;
 }
 .social-logo {
-  width: 72px;
+  width: 10%;
+  /* max-width: 72px; */
+  padding: 5px;
 }
 /* --- SECTION WHAT IS --- */
 .what-is {
@@ -409,6 +411,10 @@ header ion-icon {
   }
   .main-navbar li {
     margin: 10px 12px;
+  }
+  .social-logo {
+    width: 15%;
+    max-width: 72px;
   }
   .profile-img {
     width: 40%;
