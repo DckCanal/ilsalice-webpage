@@ -9,7 +9,6 @@
   },
   "author": "MDC",
   "license": "ISC",
-  "dependencies": {},
   "devDependencies": {
     "parcel": "^1.12.4"
   }

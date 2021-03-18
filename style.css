@@ -16,6 +16,8 @@ html {
 
 a {
   transition: background-color 0.2s;
+  text-decoration: none;
+  color: inherit;
 }
 main ul {
   list-style-type: none;
