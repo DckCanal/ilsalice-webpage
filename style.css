@@ -471,6 +471,10 @@ footer a:active {
   font-weight: 400;
   color: #ffffff;
 }
+footer h4,
+footer h5 {
+  font-weight: 400;
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 601px) {
