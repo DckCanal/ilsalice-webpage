@@ -457,6 +457,9 @@ footer .row {
   background-color: inherit;
   color: inherit;
 }
+footer a {
+  transition: color 0.2s;
+}
 footer a:link,
 footer a:visited {
   text-decoration: none;
@@ -464,7 +467,8 @@ footer a:visited {
 }
 footer a:hover,
 footer a:active {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  font-weight: 400;
   color: #ffffff;
 }
 
