@@ -438,6 +438,19 @@ header ion-icon {
   height: 85vh;
 }
 
+/* --- FOOTER --- */
+footer {
+  background-color: #333;
+  color: #cecece;
+  font-size: 70%;
+  margin: 20px 0 0 0;
+  width: 100%;
+}
+footer .row {
+  background-color: inherit;
+  color: inherit;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 601px) {
   html {
