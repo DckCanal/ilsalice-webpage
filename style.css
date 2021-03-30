@@ -443,13 +443,29 @@ header ion-icon {
 footer {
   background-color: #333;
   color: #cecece;
-  font-size: 70%;
+  font-size: 100%;
   margin: 20px 0 0 0;
   width: 100%;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+footer .col-1-of-3 {
+  margin-top: 10px;
 }
 footer .row {
   background-color: inherit;
   color: inherit;
+}
+footer a:link,
+footer a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+footer a:hover,
+footer a:active {
+  text-decoration: underline;
+  color: #ffffff;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -509,6 +525,9 @@ footer .row {
   }
   .where {
     background-color: rgb(240, 240, 240);
+  }
+  footer {
+    font-size: 85%;
   }
 }
 
@@ -571,6 +590,12 @@ footer .row {
   .tab-control a ion-icon {
     margin: 0 auto 0 auto;
     font-size: 48px;
+  }
+  footer {
+    text-align: left;
+  }
+  footer .col-1-of-3 {
+    margin-top: 0;
   }
 }
 
