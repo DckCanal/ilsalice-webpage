@@ -330,6 +330,7 @@ header ion-icon {
   /* max-width: 72px; */
   padding: 5px;
   margin: 0 10px;
+  border-radius: 50%;
 }
 /* --- SECTION WHAT IS --- */
 .what-is {
