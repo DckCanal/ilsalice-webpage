@@ -1,13 +1,13 @@
 {
-  "name": "bs",
-  "version": "1.0.0",
-  "description": "Testing bootstrap with npm",
+  "name": "ilsalice Web Page",
+  "version": "1.0.1",
+  "description": "Pagina web per lo studio di massofisioterapia",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html"
   },
-  "author": "MDC",
+  "author": "Marco De Canal",
   "license": "ISC",
   "devDependencies": {
     "parcel": "^1.12.4"
