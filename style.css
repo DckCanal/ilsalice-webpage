@@ -6,6 +6,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root{
+  --blue:#1864ab;
+  --dark-blue: #1971c2;
+}
 html {
   font-family: "Lato", "Arial", sans-serif;
   font-size: 15px;
@@ -13,11 +17,8 @@ html {
   text-rendering: optimizeLegibility;
   color: #444;
 }
-.text-blue-light {
-  color: #228be6;
-}
-.text-blue-dark {
-  color: #1864ab;
+.text-blue {
+  color: var(--blue);
 }
 .fw-100 {
   font-weight: 100;
@@ -96,11 +97,11 @@ ion-icon {
 }
 .btn-main:link,
 .btn-main:visited {
-  background-color: #1971c2;
+  background-color: var(--dark-blue);
 }
 .btn-main:hover,
 .btn-main:active {
-  background-color: #1864ab;
+  background-color: var(--blue);
 }
 .btn-border {
   width: 250px;
@@ -108,11 +109,11 @@ ion-icon {
 .btn-border:link,
 .btn-border:visited {
   font-weight: 400;
-  background-color: #1971c2;
+  background-color: var(--dark-blue);
 }
 .btn-border:hover,
 .btn-border:active {
-  background-color: #1864ab;
+  background-color: var(--blue);
 }
 .btn-border ion-icon {
   line-height: 100%;
@@ -267,7 +268,7 @@ header ion-icon {
   color: #fff;
 }
 .nav-on-main {
-  background-color: #1971c2;
+  background-color: var(--dark-blue);
 }
 .navbar-toggle {
   float: right;
@@ -306,7 +307,7 @@ header ion-icon {
 
 .main-navbar .on-header:hover,
 .main-navbar .on-header:active {
-  border-bottom: 2px solid #1971c2;
+  border-bottom: 2px solid var(--dark-blue);
 }
 .main-navbar .on-main:hover,
 .main-navbar .on-main:active {
@@ -373,7 +374,7 @@ header ion-icon {
   width: 64px;
   display: block;
   margin: 0 auto 0 auto;
-  color: #1971c2;
+  color: var(--dark-blue);
 }
 /* --- SECTION WHAT DO --- */
 .what-do .row .row:last-of-type {
@@ -404,7 +405,7 @@ header ion-icon {
 }
 .tab-btn-active {
   border-width: 2px 2px 2px 2px;
-  border-color: #1971c2;
+  border-color: var(--dark-blue);
   border-style: solid;
   border-radius: 15px 15px 0 0;
   border-bottom: 2px solid #fff;
