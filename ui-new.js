@@ -23,7 +23,7 @@ const intObs = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) {
       navbar.classList.add("nav-on-header");
       navbar.classList.remove("nav-on-main");
-      logoWrapper.style["background-color"] = "transparent";
+      // logoWrapper.style["background-color"] = "transparent";
       navLinks.forEach((link) => {
         link.classList.add("on-header");
         link.classList.remove("on-main");
@@ -31,7 +31,7 @@ const intObs = new IntersectionObserver((entries) => {
     } else {
       navbar.classList.add("nav-on-main");
       navbar.classList.remove("nav-on-header");
-      logoWrapper.style["background-color"] = "#fff";
+      // logoWrapper.style["background-color"] = "#transparent;";
       navLinks.forEach((link) => {
         link.classList.add("on-main");
         link.classList.remove("on-header");
