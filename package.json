@@ -1,6 +1,6 @@
 {
-  "name": "ilsalice Web Page",
-  "version": "1.0.1",
+  "name": "ilsalice-web-page",
+  "version": "1.1.0",
   "description": "Pagina web per lo studio di massofisioterapia",
   "main": "index.html",
   "scripts": {
