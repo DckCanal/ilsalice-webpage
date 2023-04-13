@@ -215,8 +215,9 @@ header h1 {
   letter-spacing: 1px;
   word-spacing: 4px;
 }
-header h4 {
+header h2 {
   font-weight: 300;
+  /* border: 1px solid red; */
   font-size: 160%;
   font-family: "Lato", "Arial", sans-serif;
   letter-spacing: normal;
