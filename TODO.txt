@@ -1,0 +1,21 @@
+SEO
+Update images
+    Images between sections
+    Image optimization
+    Use correct logo
+    Choose favicon
+Change landing screen button position
+
+
+
+Next:
+    ionicons framework (or other?)
+    * import ui-new.js script
+    * images path (move images folder into src?)
+    * convert <img> to <Image> from Next.js
+    * convert <script> to <Script> from Next.js
+    * importing updates from last master branch commit
+    split code into components
+    implement smooth navigation between links
+    implement expandable navbar
+    * import font
