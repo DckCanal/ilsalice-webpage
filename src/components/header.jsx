@@ -1,6 +1,6 @@
 import { Lato } from "next/font/google";
 import { Transition } from "@headlessui/react";
-import { TransitionAbove } from "./transitions";
+import { TransitionAbove, ElementWithTransition } from "./transitions";
 import { useEffect } from "react";
 import Logo from "../../images/icons/logo - white alpha.png";
 import Image from "next/image";
@@ -12,7 +12,7 @@ export default function Header() {
   }, []);
   return (
     <header className={`${lato.className} h-screen flex flex-col-reverse`}>
-      <TransitionAbove>
+      <ElementWithTransition>
         {/*
         ml-2 mb-2
         */}
@@ -27,7 +27,7 @@ export default function Header() {
             </h2>
           </div>
         </div>
-      </TransitionAbove>
+      </ElementWithTransition>
     </header>
   );
 }

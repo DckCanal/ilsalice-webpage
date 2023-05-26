@@ -16,7 +16,11 @@ import { EnvelopeIcon } from "@heroicons/react/24/solid";
 import { Section, SectionTitle, SectionSubtitle } from "./section";
 import { Highlight } from "../components/text";
 
-import { TransitionLeft, TransitionAbove } from "./transitions";
+import {
+  TransitionLeft,
+  TransitionAbove,
+  ElementWithTransition,
+} from "./transitions";
 
 export function ChiSiamo() {
   return (
@@ -43,7 +47,7 @@ export function ChiSiamo() {
       </div> */}
       <div className="grow">
         <div className="my-4 text-center text-white">
-          <TransitionLeft>
+          <ElementWithTransition>
             <div
               className="inline-block shadow-lg lg:translate-x-32 p-3 mt-12 -skew-y-6 rounded-lg"
               style={{
@@ -60,8 +64,8 @@ export function ChiSiamo() {
             <h4 className="font-normal text-lg md:text-xl lg:translate-x-32 mt-4 w-fit mx-auto">
               tra tutte le parti del tuo corpo
             </h4>
-          </TransitionLeft>
-          <TransitionLeft>
+          </ElementWithTransition>
+          <ElementWithTransition>
             <div
               className="inline-block shadow-xl p-3 mt-12 -skew-y-6 rounded-lg"
               style={{
@@ -77,8 +81,8 @@ export function ChiSiamo() {
             <h4 className="font-normal text-lg md:text-xl mt-4">
               tra voi e noi
             </h4>
-          </TransitionLeft>
-          <TransitionLeft>
+          </ElementWithTransition>
+          <ElementWithTransition>
             <div
               className="inline-block shadow-lg lg:-translate-x-32 p-3 mt-12 -skew-y-6 rounded-lg"
               style={{
@@ -93,14 +97,14 @@ export function ChiSiamo() {
             <h4 className="font-normal text-lg lg:-translate-x-32 md:text-xl mt-4 w-fit mx-auto">
               dei tuoi sintomi
             </h4>
-          </TransitionLeft>
+          </ElementWithTransition>
         </div>
-        <TransitionAbove>
+        <ElementWithTransition>
           <p className="text-center mt-20 font-normal text-xl md:text-2xl text-white max-w-xl mx-auto">
             Crediamo che siano queste le chiavi per raggiungere insieme la tua
             guarigione!
           </p>
-        </TransitionAbove>
+        </ElementWithTransition>
       </div>
       <Image
         src={marcoScrivania}
