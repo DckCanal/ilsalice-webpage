@@ -5,9 +5,9 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default function Layout({ children }) {
   return (
-    <>
-      {/* <Navbar /> */}
-      <main className={montserrat.className}>{children}</main>
-    </>
+    <div className={montserrat.className}>
+      <Navbar />
+      <main>{children}</main>
+    </div>
   );
 }
