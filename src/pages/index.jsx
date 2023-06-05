@@ -1,9 +1,13 @@
 import Head from "next/head";
 
-import { Section, SectionTitle, SectionSubtitle } from "../components/section";
-import Footer from "../components/footer";
+import {
+  Section,
+  SectionTitle,
+  SectionSubtitle,
+} from "../components/old/section";
+import Footer from "../components/old/footer";
 
-import Header from "../components/header";
+import Header from "../components/old/header";
 
 import {
   ChiSiamo,
@@ -12,7 +16,7 @@ import {
   Contatti,
   Trattamenti,
   Mappa,
-} from "../components/content";
+} from "../components/old/content";
 
 function HomePage() {
   return (
@@ -24,17 +28,17 @@ function HomePage() {
           content="Il Salice è uno studio di fisioterapia, massofisioterapia e tecniche osteopatiche a San Giovanni in Marignano, in provincia di Rimini. Marco De Canal e Giacomo Muccioli sono i due fisioterapisti e osteopati che lavorano presso il Salice. Contatti e mappa."
         />
       </Head>
-      <Header />
+      {/* <Header /> */}
 
       <main>
-        <ChiSiamo />
+        {/* <ChiSiamo />
         <Perche />
         <CosaFacciamo />
         <Contatti />
         <Trattamenti />
-        <Mappa />
+        <Mappa /> */}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

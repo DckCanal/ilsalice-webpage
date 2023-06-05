@@ -2,7 +2,7 @@ import { Lato } from "next/font/google";
 import { Transition } from "@headlessui/react";
 import { TransitionAbove, ElementWithTransition } from "./transitions";
 import { useEffect } from "react";
-import Logo from "../../images/icons/logo - white alpha.png";
+import Logo from "../../../images/icons/logo - white alpha.png";
 import Image from "next/image";
 
 const lato = Lato({ subsets: ["latin"], weight: "300" });

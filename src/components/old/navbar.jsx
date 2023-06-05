@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import logoWhite from "../../images/icons/logo - white alpha.png";
-import logo from "../../images/icons/logo quadrato piccolo.jpeg";
+import logoWhite from "../../../images/icons/logo - white alpha.png";
+import logo from "../../../images/icons/logo quadrato piccolo.jpeg";
 export default function Navbar() {
   //const [open, setOpen] = useState(false);
   //const toggleIcon = document.querySelector(".navbar-toggle-btn ion-icon");

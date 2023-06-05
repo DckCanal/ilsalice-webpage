@@ -1,20 +1,20 @@
 import Image from "next/image";
 
-import marcoProfile from "../../images/marco-profile.webp";
-import giacomoProfile from "../../images/giacomo-profile.webp";
-import insieme from "../../images/insieme.jpg";
-import attesa from "../../images/attesa.JPG";
-import articolazioni from "../../images/articolazioni.jpg";
-import marcoScrivania from "../../images/IMG_1621.jpeg";
+import marcoProfile from "../../../images/marco-profile.webp";
+import giacomoProfile from "../../../images/giacomo-profile.webp";
+import insieme from "../../../images/insieme.jpg";
+import attesa from "../../../images/attesa.JPG";
+import articolazioni from "../../../images/articolazioni.jpg";
+import marcoScrivania from "../../../images/IMG_1621.jpeg";
 
-import whatsappLogo from "../../vendors/logo/WhatsApp.png";
-import telegramLogo from "../../vendors/logo/Telegram.svg";
+import whatsappLogo from "../../../vendors/logo/WhatsApp.png";
+import telegramLogo from "../../../vendors/logo/Telegram.svg";
 
 import { PhoneIcon } from "@heroicons/react/24/solid";
 import { EnvelopeIcon } from "@heroicons/react/24/solid";
 
 import { Section, SectionTitle, SectionSubtitle } from "./section";
-import { Highlight } from "../components/text";
+import { Highlight } from "./text";
 
 import {
   TransitionLeft,
