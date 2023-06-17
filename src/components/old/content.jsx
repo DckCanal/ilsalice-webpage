@@ -3,7 +3,7 @@ import Image from "next/image";
 import marcoProfile from "../../../images/marco-profile.webp";
 import giacomoProfile from "../../../images/giacomo-profile.webp";
 import insieme from "../../../images/insieme.jpg";
-import attesa from "../../../images/attesa.JPG";
+import attesa from "../../../images/attesa.jpeg";
 import articolazioni from "../../../images/articolazioni.jpg";
 import marcoScrivania from "../../../images/IMG_1621.jpeg";
 
