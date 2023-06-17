@@ -28,9 +28,7 @@ export default forwardRef(function LandingView(props, ref) {
     >
       <div
         className="h-screen absolute top-0 my-auto w-full overflow-hidden max-w-[1440px]"
-        style={{
-          objectFit: "cover",
-        }}
+
         // style={{
         //   backgroundImage: `url(${landingBg.src})`,
         //   filter: "blur(4px)",
@@ -52,6 +50,9 @@ export default forwardRef(function LandingView(props, ref) {
           className="absolute opacity-60 -z-20 left-0 blur-sm"
           placeholder="blur"
           fill={true}
+          style={{
+            objectFit: "cover",
+          }}
         />
         <div className="w-[2000px] h-[1000px] translate-y-[500px] bg-white absolute top-[-33px] left-1/2 -translate-x-[1000px] rotate-[4deg] -z-[1] border-t-4 border-[#D9D9D9]" />
       </div>
