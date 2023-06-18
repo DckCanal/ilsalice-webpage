@@ -22,12 +22,12 @@ const roboto = Roboto({
 export default forwardRef(function LandingView(props, ref) {
   return (
     <section
-      className="overflow-hidden flex flex-col justify-between h-screen"
+      className="overflow-hidden flex flex-col justify-between h-screen min-h-[800px] sm:min-h-[600px]"
       id="landing"
       ref={ref}
     >
       <div
-        className="h-screen absolute top-0 my-auto w-full overflow-hidden max-w-[1440px]"
+        className="h-screen min-h-[800px] sm:min-h-[600px] absolute top-0 my-auto w-full overflow-hidden max-w-[1440px]"
 
         // style={{
         //   backgroundImage: `url(${landingBg.src})`,
@@ -55,32 +55,39 @@ export default forwardRef(function LandingView(props, ref) {
           }}
         />
         <div className="w-[2000px] h-[1000px] translate-y-[500px] bg-white absolute top-[-33px] left-1/2 -translate-x-[1000px] rotate-[4deg] -z-[1] border-t-4 border-[#D9D9D9]" />
-      </div>
-      {/* <div className="w-[2000px] h-[500px] bg-white relative -top-32 -left-1/2 rotate-[16deg] -z-[1] border-t-4 border-[#D9D9D9]" /> */}
-      <div
-        className={`font-semibold text-4xl space-y-11 mx-auto pt-28 text-center ${lexend.className} text-[#284800] text-shadow`}
-      >
-        {/* <Image src={landingBg} className="opacity-60" /> */}
-        <h2>Ascolto</h2>
-        <h2>Competenza</h2>
-        <h2>Affidabilità</h2>
-      </div>
-      <div>
-        <h3 className="italic text-3xl text-shadow text-center text-[#626262] mt-60">
-          al vostro servizio
-        </h3>
-        <div className="mt-4 border border-salice-50 w-[270px] mx-auto mb-[30px]" />
-        <div className="flex flex-row justify-between">
-          <div className="flex flex-col ml-5">
+        <Image
+          src={landingBadge}
+          alt="Immagine di benvenuto"
+          width={180}
+          height={180}
+          className="absolute rounded-full border-2 border-white top-[377px] left-1/2 -translate-x-1/2 shadow-md"
+        />
+        <div
+          className={`absolute top-[118px] left-1/2 -translate-x-1/2 font-semibold text-3xl lg:text-4xl space-y-11 mx-auto text-center ${lexend.className} text-[#284800] text-shadow`}
+        >
+          <h2>Ascolto</h2>
+          <h2>Competenza</h2>
+          <h2>Affidabilità</h2>
+        </div>
+        <div className="absolute top-[581px] left-1/2 -translate-x-1/2 ">
+          <h3 className="italic text-2xl lg:text-3xl text-shadow text-center text-[#626262]">
+            al vostro servizio
+          </h3>
+          <div className="mt-4 border border-salice-50 w-[220px] lg:w-[270px] mx-auto mb-[30px]" />
+        </div>
+        <div className="absolute left-[22px] bottom-[7px]">
+          <div className="flex flex-col">
             <Image src={logo} height={74} width={74} alt="Logo" />
-            <h4 className="italic text-2xl">il Salice</h4>
-            <h5 className="font-light text-base">
+            <h4 className="italic text-xl lg:text-2xl">il Salice</h4>
+            <h5 className="font-light text-sm lg:text-base">
               MASSOFISIOTERAPIA <br /> OSTEOPATIA
             </h5>
           </div>
-          <div className="flex flex-col gap-4 mt-10">
+        </div>
+        <div className="absolute right-[22px] bottom-[7px] lg:bottom-[22px]">
+          <div className="flex flex-col lg:flex-row gap-4 text-sm lg:text-base">
             <Link
-              className={`border-2 border-salice-50 rounded-xl flex flex-row w-32 h-12 mr-4 ${roboto.className} text-sm no-click-bg`}
+              className={`border-2 border-salice-50 rounded-xl flex flex-row w-32 h-12 ${roboto.className} text-sm no-click-bg`}
               href="https://wa.me/3385330241"
               aria-label="Apri chat su WhatsApp"
             >
@@ -94,7 +101,7 @@ export default forwardRef(function LandingView(props, ref) {
               <span className="mt-[13px] ml-[15px]">SCRIVI</span>
             </Link>
             <Link
-              className={`border-2 border-salice-50 rounded-xl flex flew-row w-32 h-12 mr-4 ${roboto.className} text-sm no-click-bg`}
+              className={`border-2 border-salice-50 rounded-xl flex flew-row w-32 h-12 ${roboto.className} text-sm no-click-bg`}
               href="#"
               aria-label="Link alla mappa"
             >
@@ -103,15 +110,12 @@ export default forwardRef(function LandingView(props, ref) {
             </Link>
           </div>
         </div>
-        {/* <div className="w-[2000px] h-[500px] bg-white relative -top-32 -left-1/2 rotate-[16deg] -z-[1] border-t-4 border-[#D9D9D9]" /> */}
       </div>
-      <Image
-        src={landingBadge}
-        alt="Immagine di benvenuto"
-        width={180}
-        height={180}
-        className="absolute rounded-full border-2 border-white top-[377px] left-1/2 -translate-x-1/2 shadow-md"
-      />
+      {/* <div className="w-[2000px] h-[500px] bg-white relative -top-32 -left-1/2 rotate-[16deg] -z-[1] border-t-4 border-[#D9D9D9]" /> */}
+
+      {/* <div>
+        <div className="flex flex-row justify-between"></div>
+      </div> */}
     </section>
   );
 });
