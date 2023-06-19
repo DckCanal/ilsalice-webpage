@@ -22,12 +22,13 @@ const roboto = Roboto({
 export default forwardRef(function LandingView(props, ref) {
   return (
     <section
-      className="overflow-hidden flex flex-col justify-between h-screen min-h-[800px] sm:min-h-[600px]"
+      className="overflow-hidden h-screen min-h-[800px] sm:min-h-[600px]"
       id="landing"
       ref={ref}
     >
       <div
-        className="h-screen min-h-[800px] sm:min-h-[600px] absolute top-0 my-auto w-full overflow-hidden max-w-[1440px]"
+        className="h-screen min-h-[800px] sm:min-h-[600px] absolute top-0 my-auto \\
+        w-full overflow-hidden max-w-[1440px]"
 
         // style={{
         //   backgroundImage: `url(${landingBg.src})`,
@@ -54,16 +55,23 @@ export default forwardRef(function LandingView(props, ref) {
             objectFit: "cover",
           }}
         />
-        <div className="w-[2000px] h-[1000px] translate-y-[500px] bg-white absolute top-[-33px] left-1/2 -translate-x-[1000px] rotate-[4deg] -z-[1] border-t-4 border-[#D9D9D9]" />
+        <div
+          className="w-[2000px] h-[1000px] translate-y-[500px] bg-white \\
+        absolute top-[-33px] left-1/2 -translate-x-[1000px] rotate-[4deg] -z-[1] \\
+        border-t-4 border-[#D9D9D9]"
+        />
         <Image
           src={landingBadge}
           alt="Immagine di benvenuto"
           width={180}
           height={180}
-          className="absolute rounded-full border-2 border-white top-[377px] left-1/2 -translate-x-1/2 shadow-md"
+          className="absolute rounded-full border-2 border-white top-[377px] left-1/2 \\
+          -translate-x-1/2 shadow-md"
         />
         <div
-          className={`absolute top-[118px] left-1/2 -translate-x-1/2 font-semibold text-3xl lg:text-4xl space-y-11 mx-auto text-center ${lexend.className} text-[#284800] text-shadow`}
+          className={`absolute top-[118px] left-1/2 -translate-x-1/2 font-semibold text-3xl \\
+          lg:text-4xl space-y-11 mx-auto text-center ${lexend.className} \\
+          text-[#284800] text-shadow`}
         >
           <h2>Ascolto</h2>
           <h2>Competenza</h2>
@@ -73,7 +81,10 @@ export default forwardRef(function LandingView(props, ref) {
           <h3 className="italic text-2xl lg:text-3xl text-shadow text-center text-[#626262]">
             al vostro servizio
           </h3>
-          <div className="mt-4 border border-salice-50 w-[220px] lg:w-[270px] mx-auto mb-[30px]" />
+          <div
+            className="mt-4 border border-salice-50 w-[220px] lg:w-[270px] \\
+          mx-auto mb-[30px]"
+          />
         </div>
         <div className="absolute left-[22px] bottom-[7px]">
           <div className="flex flex-col">
@@ -87,7 +98,8 @@ export default forwardRef(function LandingView(props, ref) {
         <div className="absolute right-[22px] bottom-[7px] lg:bottom-[22px]">
           <div className="flex flex-col lg:flex-row gap-4 text-sm lg:text-base">
             <Link
-              className={`border-2 border-salice-50 rounded-xl flex flex-row w-32 h-12 ${roboto.className} text-sm no-click-bg`}
+              className={`border-2 border-salice-50 rounded-xl flex flex-row w-32 h-12 \\
+              ${roboto.className} text-sm no-click-bg`}
               href="https://wa.me/3385330241"
               aria-label="Apri chat su WhatsApp"
             >
