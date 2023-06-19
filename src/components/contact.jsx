@@ -30,7 +30,10 @@ const robotoHeavy = Roboto({
 
 function ContactCard({ name, phone, mail, img }) {
   return (
-    <div className="w-[340px] h-[78px] rounded-md border-b-[3px] border-salice-50 bg-white flex flex-row gap-[8px]">
+    <div
+      className="w-[340px] h-[78px] rounded-md border-b-[3px] \\
+    border-salice-50 bg-white flex flex-row gap-[8px]"
+    >
       <div>
         <Image
           height={64}
@@ -55,29 +58,35 @@ function ContactCard({ name, phone, mail, img }) {
 }
 
 function PhotoGallery() {
-  return <div className="w-full h-[244px] bg-salice-700"></div>;
+  return <div className="w-full h-[244px] bg-salice-700 my-96"></div>;
+}
+
+function Quote() {
+  return (
+    <div>
+      <p>Il corpo bla bla</p>
+      <p>Sutherland</p>
+    </div>
+  );
 }
 
 export default forwardRef(function Contact(props, ref) {
   return (
-    <section className="pt-[100px]">
-      <div
-        className="h-screen"
+    <section className="pt-[100px] relative overflow-hidden">
+      <Image
+        src={contactBg}
+        alt="Sfondo per la sezione dei contatti"
+        placeholder="blur"
+        fill={true}
         style={{
-          backgroundImage: `url(${contactBg.src})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          opacity: "60%",
-          zIndex: "-1",
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          transform: "translateY(100%)",
+          objectFit: "cover",
         }}
+        className="relative opacity-60 -z-20"
       />
-      <div className="flex flex-col mb-[80px] justify-between gap-[27px] bg-transparent items-center">
+      <div
+        className="flex flex-col mb-[80px] justify-between gap-[27px] \\
+      bg-transparent items-center"
+      >
         <ContactCard
           name="Marco De Canal"
           phone="338 533 0241"
@@ -92,6 +101,7 @@ export default forwardRef(function Contact(props, ref) {
         />
       </div>
       <PhotoGallery />
+      <Quote />
     </section>
   );
 });
