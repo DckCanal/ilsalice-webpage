@@ -86,7 +86,7 @@ export default forwardRef(function LandingView(props, ref) {
           mx-auto mb-[30px]"
           />
         </div>
-        <div className="absolute left-[22px] bottom-[7px]">
+        <div className="absolute left-[22px] bottom-[22px]">
           <div className="flex flex-col">
             <Image src={logo} height={74} width={74} alt="Logo" />
             <h4 className="italic text-xl lg:text-2xl">il Salice</h4>
@@ -95,7 +95,7 @@ export default forwardRef(function LandingView(props, ref) {
             </h5>
           </div>
         </div>
-        <div className="absolute right-[22px] bottom-[7px] lg:bottom-[22px]">
+        <div className="absolute right-[22px] bottom-[22px]">
           <div className="flex flex-col lg:flex-row gap-4 text-sm lg:text-base">
             <Link
               className={`border-2 border-salice-50 rounded-xl flex flex-row w-32 h-12 \\
