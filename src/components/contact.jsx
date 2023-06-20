@@ -5,6 +5,7 @@ import giacomoProfile from "../../images/giacomo-profile.webp";
 import Image from "next/image";
 
 import { Lexend, Roboto, Merriweather } from "next/font/google";
+import Link from "next/link";
 const lexend = Lexend({
   subsets: ["latin"],
   display: "swap",
@@ -39,31 +40,47 @@ const merriweatherItalic = Merriweather({
   style: "italic",
 });
 
-function ContactCard({ name, phone, mail, img }) {
+function ContactCard({ name, phone, phoneString, mail, img }) {
   return (
     <div
-      className="w-[340px] h-[78px] rounded-md border-b-[3px] \\
+      className="w-[340px] lg:w-[500px] h-[78px] lg:h-[96px] xl:h-[260px] rounded-md border-b-[3px] \\
     border-salice-50 bg-white flex flex-row gap-[8px]"
     >
-      <div>
+      <div
+        className="relative h-[64px] w-[64px] xl:h-[96px] xl:w-[96px] overflow-hidden \\
+       my-[7px] lg:my-[12px] xl:my-[20px] ml-[8px] lg:mx-[20px]"
+      >
         <Image
-          height={64}
-          width={64}
+          // height={64}
+          // width={64}
+          fill={true}
+          style={{ objectFit: "cover" }}
           alt={`Foto profilo di ${name}`}
           src={img}
-          className="rounded-full my-[7px] ml-[8px]"
+          className="rounded-full"
+          sizes="(max-width: 1279px) 64px, 96px"
         />
       </div>
-      <div>
+      <div className="grow">
         <h3
-          className={`${robotoHeavy.className} text-md uppercase`}
+          className={`${robotoHeavy.className} text-md lg:text-lg xl:text-2xl xl:ml-[20px] xl:mt-[48px] uppercase`}
           // style={{ fontVariantCaps: "petite-caps" }}
         >
           {name}
         </h3>
-        <h4 className={`${roboto.className} text-md`}>{phone}</h4>
-        <h4 className={`${roboto.className} text-md`}>{mail}</h4>
+        <div className="max-xl:hidden border border-gray-500 w-[300px] mt-[24px] ml-[18px]" />
+        <h4
+          className={`${roboto.className} text-md lg:text-lg xl:text-xl xl:mt-[32px] xl:ml-[20px]`}
+        >
+          <Link href={`tel:${phone}`}>{phoneString}</Link>
+        </h4>
+        <h4
+          className={`${roboto.className} text-md lg:text-lg xl:text-xl xl:mt-[20px] xl:ml-[20px]`}
+        >
+          <a href={`mailto:${mail}`}>{mail}</a>
+        </h4>
       </div>
+      <div></div>
     </div>
   );
 }
@@ -105,18 +122,20 @@ export default forwardRef(function Contact(props, ref) {
         className="relative opacity-60 -z-20"
       />
       <div
-        className="flex flex-col mb-[80px] justify-between gap-[27px] \\
+        className="flex flex-col xl:flex-row xl:mx-[40px] mb-[80px] justify-between gap-[27px] \\
       bg-transparent items-center"
       >
         <ContactCard
           name="Marco De Canal"
-          phone="338 533 0241"
+          phone="3385330241"
+          phoneString="338 533 0241"
           mail="marco.decanal@gmail.com"
           img={marcoProfile}
         />
         <ContactCard
           name="Giacomo Muccioli"
-          phone="339 318 2797"
+          phone="3393182797"
+          phoneString="339 318 2797"
           mail="giacomo.muccioli.scout@gmail.com"
           img={giacomoProfile}
         />
