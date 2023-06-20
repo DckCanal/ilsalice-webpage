@@ -17,12 +17,6 @@ const roboto = Roboto({
   weight: "300",
 });
 
-const robotoLight = Roboto({
-  subsets: ["latin"],
-  display: "swap",
-  weight: "100",
-});
-
 const robotoHeavy = Roboto({
   subsets: ["latin"],
   display: "swap",
@@ -86,14 +80,14 @@ function ContactCard({ name, phone, phoneString, mail, img }) {
 }
 
 function PhotoGallery() {
-  return <div className="w-full h-[244px] bg-salice-700 my-96"></div>;
+  return <div className="w-full h-[244px] bg-salice-700 my-[80px]"></div>;
 }
 
 function Quote() {
   return (
     <div
-      className="w-[290px] h-[200px] rounded-lg border-2 border-salice-200 shadow-md \\
-    flex flex-col justify-between mx-auto bg-white py-[8px] px-[18px]"
+      className="w-[290px] lg:w-[400px] xl:w-[600px] h-[200px] rounded-lg border-2 border-salice-200 shadow-md \\
+    flex flex-col justify-between mx-auto bg-white py-[8px] lg:py-[20px] px-[18px] mb-[20px] lg:mb-[40px]"
     >
       <p
         className={`${merriweatherItalic.className} text-center text-shadow text-md mb-[25px]`}
@@ -101,7 +95,9 @@ function Quote() {
         Il corpo è un meccanismo di autoguarigione e il ruolo dell'osteopata è
         facilitare questo processo.
       </p>
-      <p className={`${merriweather.className} text-right text-sm`}>
+      <p
+        className={`${merriweather.className} text-right text-sm lg:w-[60%] mr-0 ml-auto`}
+      >
         W. G. Sutherland, fondatore dell'osteopatia craniale
       </p>
     </div>
