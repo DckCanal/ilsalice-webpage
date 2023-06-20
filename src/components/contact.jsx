@@ -4,7 +4,7 @@ import marcoProfile from "../../images/marco-profile.webp";
 import giacomoProfile from "../../images/giacomo-profile.webp";
 import Image from "next/image";
 
-import { Lexend, Roboto } from "next/font/google";
+import { Lexend, Roboto, Merriweather } from "next/font/google";
 const lexend = Lexend({
   subsets: ["latin"],
   display: "swap",
@@ -25,7 +25,18 @@ const robotoLight = Roboto({
 const robotoHeavy = Roboto({
   subsets: ["latin"],
   display: "swap",
-  weight: "500",
+  weight: "400",
+});
+
+const merriweather = Merriweather({
+  weight: "300",
+  subsets: ["latin"],
+});
+
+const merriweatherItalic = Merriweather({
+  subsets: ["latin"],
+  weight: "300",
+  style: "italic",
 });
 
 function ContactCard({ name, phone, mail, img }) {
@@ -63,9 +74,19 @@ function PhotoGallery() {
 
 function Quote() {
   return (
-    <div>
-      <p>Il corpo bla bla</p>
-      <p>Sutherland</p>
+    <div
+      className="w-[290px] h-[200px] rounded-lg border-2 border-salice-200 shadow-md \\
+    flex flex-col justify-between mx-auto bg-white py-[8px] px-[18px]"
+    >
+      <p
+        className={`${merriweatherItalic.className} text-center text-shadow text-md mb-[25px]`}
+      >
+        Il corpo è un meccanismo di autoguarigione e il ruolo dell'osteopata è
+        facilitare questo processo.
+      </p>
+      <p className={`${merriweather.className} text-right text-sm`}>
+        W. G. Sutherland, fondatore dell'osteopatia craniale
+      </p>
     </div>
   );
 }
