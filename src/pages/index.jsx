@@ -1,23 +1,23 @@
 import Head from "next/head";
 import { useRef } from "react";
 import Navbar from "../components/navbar";
-import {
-  Section,
-  SectionTitle,
-  SectionSubtitle,
-} from "../components/old/section";
-import Footer from "../components/old/footer";
+// import {
+//   Section,
+//   SectionTitle,
+//   SectionSubtitle,
+// } from "../components/old/section";
+// import Footer from "../components/old/footer";
 
-import Header from "../components/old/header";
+// import Header from "../components/old/header";
 
-import {
-  ChiSiamo,
-  Perche,
-  CosaFacciamo,
-  Contatti,
-  Trattamenti,
-  Mappa,
-} from "../components/old/content";
+// import {
+//   ChiSiamo,
+//   Perche,
+//   CosaFacciamo,
+//   Contatti,
+//   Trattamenti,
+//   Mappa,
+// } from "../components/old/content";
 
 import LandingView from "../components/landing";
 import Contact from "../components/contact";
