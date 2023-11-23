@@ -106,7 +106,7 @@ function Quote() {
 
 export default forwardRef(function Contact(props, ref) {
   return (
-    <section className="pt-[100px] relative overflow-hidden">
+    <section className="pt-[100px] relative overflow-hidden bg-white -z-30 h-screen">
       <Image
         src={contactBg}
         alt="Sfondo per la sezione dei contatti"
