@@ -1,6 +1,5 @@
 import landingBg from "../../images/landingBg.jpeg";
 import landingBadge from "../../images/landingBadge.jpeg";
-// import logo from "../../images/icons/logo.jpeg";
 import logo from "../../images/icons/logo - alpha - min.png";
 
 import WAIconGreen from "../../vendors/logo/WA-green.png";
@@ -21,6 +20,12 @@ const roboto = Roboto({
   display: "swap",
   weight: "300",
 });
+
+const robotoBold = Roboto({
+  subsets: ["latin"],
+  display: "swap",
+  weight: "500",
+});
 export default forwardRef(function LandingView(props, ref) {
   return (
     <section
@@ -30,56 +35,45 @@ export default forwardRef(function LandingView(props, ref) {
     >
       <div
         className="h-screen min-h-[800px] sm:min-h-[600px] absolute top-0 my-auto \\
-        w-full overflow-hidden max-w-[1440px]"
-
-        // style={{
-        //   backgroundImage: `url(${landingBg.src})`,
-        //   filter: "blur(4px)",
-        //   backgroundPosition: "50% -40px",
-        //   backgroundSize: "cover",
-        //   backgroundRepeat: "no-repeat",
-        //   opacity: "60%",
-        //   zIndex: -2,
-        //   position: "absolute",
-        //   top: 0,
-        //   left: 0,
-        //   width: "100%",
-        //   height: "100%",
-        // }}
+        w-full overflow-hidden max-w-[1440px] bg-white -z-30"
       >
         <Image
           src={landingBg}
           alt="Background home page"
-          className="absolute opacity-60 -z-20 left-0 blur-sm"
+          className="absolute opacity-80 -z-20 left-0 blur-sm"
           placeholder="blur"
           fill={true}
           style={{
             objectFit: "cover",
           }}
         />
+        {/* translate-y-[500px] top-[-10px] */}
         <div
-          className="w-[2000px] h-[1000px] translate-y-[500px] bg-white \\
-        absolute top-[-33px] left-1/2 -translate-x-[1000px] rotate-[4deg] -z-[1] \\
+          className="w-[2000px] h-[1000px] translate-y-[110px] bg-white \\
+        absolute top-[50%] left-1/2 -translate-x-[1000px] rotate-[16deg] -z-[1] \\
         border-t-4 border-[#D9D9D9]"
         />
+        {/* top-[377px] */}
         <Image
           src={landingBadge}
           alt="Immagine di benvenuto"
           width={180}
           height={180}
-          className="absolute rounded-full border-2 border-white top-[377px] left-1/2 \\
+          className="absolute rounded-full border-2 border-white top-[50%] left-1/2 \\
           -translate-x-1/2 shadow-md"
         />
+        {/* top-[118px] */}
         <div
-          className={`absolute top-[118px] left-1/2 -translate-x-1/2 font-semibold text-3xl \\
-          lg:text-4xl space-y-11 mx-auto text-center ${lexend.className} \\
+          className={`absolute top-[25%] -translate-y-1/2 left-1/2 -translate-x-1/2 font-semibold text-3xl \\
+          lg:text-4xl space-y-11 lg:space-y-16 mx-auto text-center ${lexend.className} \\
           text-[#284800] text-shadow`}
         >
           <h2>Ascolto</h2>
           <h2>Competenza</h2>
           <h2>Affidabilità</h2>
         </div>
-        <div className="absolute top-[581px] left-1/2 -translate-x-1/2 ">
+        {/* top-[581px] lg:top-[620px] */}
+        <div className="absolute bottom-[20%] lg:bottom-[15%]  left-1/2 -translate-x-1/2 ">
           <h3 className="italic text-2xl lg:text-3xl text-shadow text-center text-[#626262]">
             al vostro servizio
           </h3>
@@ -98,15 +92,15 @@ export default forwardRef(function LandingView(props, ref) {
           </div>
         </div>
         <div className="absolute right-[22px] bottom-[22px]">
-          <div className="flex flex-col lg:flex-row gap-4 text-sm lg:text-base">
+          <div className="flex flex-col gap-4 text-sm lg:text-base">
             <Link
-              className={`border-2 border-salice-50 rounded-xl flex flex-row w-32 h-12 \\
-              ${roboto.className} text-sm no-click-bg`}
+              className={`border-0 border-salice-50 rounded-xl flex flex-row w-32 h-12 \\
+              ${robotoBold.className} text-sm no-click-bg text-white bg-salice-400`}
               href="https://wa.me/3385330241"
               aria-label="Apri chat su WhatsApp"
             >
               <Image
-                src={WAIconGreen}
+                src={WAIconWhite}
                 alt="Logo WhatsApp"
                 height={34}
                 width={34}
