@@ -26,16 +26,91 @@ const robotoBold = Roboto({
   display: "swap",
   weight: "500",
 });
+const minScreenHeight = 600;
 export default forwardRef(function LandingView(props, ref) {
   return (
     <section
-      className="overflow-hidden h-screen min-h-[800px] sm:min-h-[600px]"
+      className={`overflow-visible h-screen min-h-[1000px] sm:min-h-[600px] flex flex-col justify-between pt-[84px]`}
       id="landing"
       ref={ref}
     >
       <div
-        className="h-screen min-h-[800px] sm:min-h-[600px] absolute top-0 my-auto \\
-        w-full overflow-hidden max-w-[1440px] bg-white -z-30"
+        className={`font-semibold text-3xl \\
+          lg:text-4xl mx-auto text-center ${lexend.className} \\
+          text-[#284800] text-shadow grow flex flex-col justify-around`}
+      >
+        <h2>Ascolto</h2>
+        <h2>Competenza</h2>
+        <h2>Affidabilità</h2>
+      </div>
+      {/*
+        TODO: inserire LOGO - BADGE - BUTTONS in un div con flex-row, cambiando l'allineamento; in tal modo,
+        se lo schermo viene ridotto molto in altezza, risultano affiancati ma non scompaiono.
+
+        TODO: action buttons always on landing page, without scroll needed.
+      */}
+      <div className="flex flex-col grow-0">
+        <Image
+          src={landingBadge}
+          alt="Immagine di benvenuto"
+          width={180}
+          height={180}
+          className="rounded-full border-2 border-white shadow-md mx-auto"
+        />
+      </div>
+
+      <div className="flex flex-col min-[540px]:flex-row justify-between my-6 mx-6 grow">
+        <div className="flex flex-col justify-center min-[540px]:justify-end order-2 min-[540px]:order-1 text-center min-[540px]:text-left">
+          <Image
+            src={logo}
+            height={74}
+            width={74}
+            alt="Logo"
+            className="mx-auto min-[540px]:mx-0"
+          />
+          <h4 className="italic text-xl lg:text-2xl">il Salice</h4>
+          <h5 className="font-light text-sm lg:text-base">
+            MASSOFISIOTERAPIA <br /> OSTEOPATIA
+          </h5>
+        </div>
+        <div className="order-1 min-[540px]:order-2">
+          <h3 className="italic text-2xl lg:text-3xl text-shadow text-center text-[#626262]">
+            al vostro servizio
+          </h3>
+          <div
+            className="mt-4 border border-salice-50 w-[220px] lg:w-[270px] \\
+          mx-auto mb-[30px]"
+          />
+        </div>
+        <div className="flex flex-col min-[540px]:justify-end gap-4 text-min-[540px] lg:text-base order-3">
+          <Link
+            className={`border-0 border-salice-50 rounded-xl flex flex-row w-32 h-12 mx-auto \\
+              ${robotoBold.className} text-sm no-click-bg text-white bg-salice-400`}
+            href="https://wa.me/3385330241"
+            aria-label="Apri chat su WhatsApp"
+          >
+            <Image
+              src={WAIconWhite}
+              alt="Logo WhatsApp"
+              height={34}
+              width={34}
+              className="h-[34px] w-[34px] ml-[8px] my-[5px]"
+            />
+            <span className="mt-[13px] ml-[15px]">SCRIVI</span>
+          </Link>
+          <Link
+            className={`border-2 border-salice-50 rounded-xl flex flew-row w-32 h-12 ${roboto.className} text-sm no-click-bg mx-auto`}
+            href="#"
+            aria-label="Link alla mappa"
+          >
+            <MapPinIcon className="h-[34px] w-[34px] ml-[8px] my-[5px]" />
+            <span className="mt-[13px] ml-[10px]">NAVIGA</span>
+          </Link>
+        </div>
+      </div>
+      <div
+        className={`h-screen min-h-[1000px] sm:min-h-[600px] absolute top-0 my-auto \\
+        w-full overflow-hidden max-w-[1440px] bg-white -z-30`}
       >
         <Image
           src={landingBg}
@@ -49,12 +124,12 @@ export default forwardRef(function LandingView(props, ref) {
         />
         {/* translate-y-[500px] top-[-10px] */}
         <div
-          className="w-[2000px] h-[1000px] translate-y-[110px] bg-white \\
+          className="w-[2000px] h-[1000px] -translate-y-[60px] min-[540px]:translate-y-[30px] bg-white \\
         absolute top-[50%] left-1/2 -translate-x-[1000px] rotate-[16deg] -z-[1] \\
         border-t-4 border-[#D9D9D9]"
         />
         {/* top-[377px] */}
-        <Image
+        {/* <Image
           src={landingBadge}
           alt="Immagine di benvenuto"
           width={180}
@@ -63,17 +138,9 @@ export default forwardRef(function LandingView(props, ref) {
           -translate-x-1/2 shadow-md"
         />
         {/* top-[118px] */}
-        <div
-          className={`absolute top-[25%] -translate-y-1/2 left-1/2 -translate-x-1/2 font-semibold text-3xl \\
-          lg:text-4xl space-y-11 lg:space-y-16 mx-auto text-center ${lexend.className} \\
-          text-[#284800] text-shadow`}
-        >
-          <h2>Ascolto</h2>
-          <h2>Competenza</h2>
-          <h2>Affidabilità</h2>
-        </div>
+
         {/* top-[581px] lg:top-[620px] */}
-        <div className="absolute bottom-[20%] lg:bottom-[15%]  left-1/2 -translate-x-1/2 ">
+        {/*<div className="absolute top-[60%]  left-1/2 -translate-x-1/2 ">
           <h3 className="italic text-2xl lg:text-3xl text-shadow text-center text-[#626262]">
             al vostro servizio
           </h3>
@@ -81,43 +148,7 @@ export default forwardRef(function LandingView(props, ref) {
             className="mt-4 border border-salice-50 w-[220px] lg:w-[270px] \\
           mx-auto mb-[30px]"
           />
-        </div>
-        <div className="absolute left-[22px] bottom-[22px]">
-          <div className="flex flex-col">
-            <Image src={logo} height={74} width={74} alt="Logo" />
-            <h4 className="italic text-xl lg:text-2xl">il Salice</h4>
-            <h5 className="font-light text-sm lg:text-base">
-              MASSOFISIOTERAPIA <br /> OSTEOPATIA
-            </h5>
-          </div>
-        </div>
-        <div className="absolute right-[22px] bottom-[22px]">
-          <div className="flex flex-col gap-4 text-sm lg:text-base">
-            <Link
-              className={`border-0 border-salice-50 rounded-xl flex flex-row w-32 h-12 \\
-              ${robotoBold.className} text-sm no-click-bg text-white bg-salice-400`}
-              href="https://wa.me/3385330241"
-              aria-label="Apri chat su WhatsApp"
-            >
-              <Image
-                src={WAIconWhite}
-                alt="Logo WhatsApp"
-                height={34}
-                width={34}
-                className="h-[34px] w-[34px] ml-[8px] my-[5px]"
-              />
-              <span className="mt-[13px] ml-[15px]">SCRIVI</span>
-            </Link>
-            <Link
-              className={`border-2 border-salice-50 rounded-xl flex flew-row w-32 h-12 ${roboto.className} text-sm no-click-bg`}
-              href="#"
-              aria-label="Link alla mappa"
-            >
-              <MapPinIcon className="h-[34px] w-[34px] ml-[8px] my-[5px]" />
-              <span className="mt-[13px] ml-[10px]">NAVIGA</span>
-            </Link>
-          </div>
-        </div>
+        </div>*/}
       </div>
       {/* <div className="w-[2000px] h-[500px] bg-white relative -top-32 -left-1/2 rotate-[16deg] -z-[1] border-t-4 border-[#D9D9D9]" /> */}
 
