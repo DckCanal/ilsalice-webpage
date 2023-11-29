@@ -30,13 +30,13 @@ const minScreenHeight = 600;
 export default forwardRef(function LandingView(props, ref) {
   return (
     <section
-      className={`overflow-visible h-screen min-h-[1000px] sm:min-h-[600px] flex flex-col justify-between pt-[84px]`}
+      className={`overflow-visible h-screen min-h-[1000px] min-[330px]:min-h-[650px] flex flex-col justify-between pt-[84px]`}
       id="landing"
       ref={ref}
     >
       <div
-        className={`font-semibold text-3xl \\
-          lg:text-4xl mx-auto text-center ${lexend.className} \\
+        className={`font-medium text-2xl \\
+           mx-auto text-center ${lexend.className} \\
           text-[#284800] text-shadow grow flex flex-col justify-around`}
       >
         <h2>Ascolto</h2>
@@ -57,23 +57,7 @@ export default forwardRef(function LandingView(props, ref) {
           height={180}
           className="rounded-full border-2 border-white shadow-md mx-auto"
         />
-      </div>
-
-      <div className="flex flex-col min-[540px]:flex-row justify-between my-6 mx-6 grow">
-        <div className="flex flex-col justify-center min-[540px]:justify-end order-2 min-[540px]:order-1 text-center min-[540px]:text-left">
-          <Image
-            src={logo}
-            height={74}
-            width={74}
-            alt="Logo"
-            className="mx-auto min-[540px]:mx-0"
-          />
-          <h4 className="italic text-xl lg:text-2xl">il Salice</h4>
-          <h5 className="font-light text-sm lg:text-base">
-            MASSOFISIOTERAPIA <br /> OSTEOPATIA
-          </h5>
-        </div>
-        <div className="order-1 min-[540px]:order-2">
+        <div className="mt-4">
           <h3 className="italic text-2xl lg:text-3xl text-shadow text-center text-[#626262]">
             al vostro servizio
           </h3>
@@ -82,7 +66,32 @@ export default forwardRef(function LandingView(props, ref) {
           mx-auto mb-[30px]"
           />
         </div>
-        <div className="flex flex-col min-[540px]:justify-end gap-4 text-min-[540px] lg:text-base order-3">
+      </div>
+
+      <div className="flex flex-col min-[330px]:flex-row justify-between my-6 mx-6 grow">
+        <div className="flex flex-col justify-center min-[330px]:justify-end order-2 min-[330px]:order-1 text-center min-[330px]:text-left">
+          <Image
+            src={logo}
+            height={74}
+            width={74}
+            alt="Logo"
+            className="mx-auto min-[330px]:mx-0"
+          />
+          <h4 className="italic text-xl lg:text-2xl">il Salice</h4>
+          <h5 className="font-light text-sm lg:text-base">
+            MASSOFISIOTERAPIA <br /> OSTEOPATIA
+          </h5>
+        </div>
+        {/* <div className="order-1 min-[330px]:order-2">
+          <h3 className="italic text-2xl lg:text-3xl text-shadow text-center text-[#626262]">
+            al vostro servizio
+          </h3>
+          <div
+            className="mt-4 border border-salice-50 w-[220px] lg:w-[270px] \\
+          mx-auto mb-[30px]"
+          />
+        </div> */}
+        <div className="flex flex-col min-[330px]:justify-end gap-4 text-min-[330px] lg:text-base order-3">
           <Link
             className={`border-0 border-salice-50 rounded-xl flex flex-row w-32 h-12 mx-auto \\
               ${robotoBold.className} text-sm no-click-bg text-white bg-salice-400`}
@@ -109,7 +118,7 @@ export default forwardRef(function LandingView(props, ref) {
         </div>
       </div>
       <div
-        className={`h-screen min-h-[1000px] sm:min-h-[600px] absolute top-0 my-auto \\
+        className={`h-screen min-h-[1000px] min-[330px]:min-h-[650px] absolute top-0 my-auto \\
         w-full overflow-hidden max-w-[1440px] bg-white -z-30`}
       >
         <Image
@@ -124,7 +133,7 @@ export default forwardRef(function LandingView(props, ref) {
         />
         {/* translate-y-[500px] top-[-10px] */}
         <div
-          className="w-[2000px] h-[1000px] -translate-y-[60px] min-[540px]:translate-y-[30px] bg-white \\
+          className="w-[2000px] h-[1200px] -translate-y-[60px] min-[330px]:-translate-y-[20px] bg-white \\
         absolute top-[50%] left-1/2 -translate-x-[1000px] rotate-[16deg] -z-[1] \\
         border-t-4 border-[#D9D9D9]"
         />
