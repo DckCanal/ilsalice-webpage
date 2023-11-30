@@ -43,12 +43,6 @@ export default forwardRef(function LandingView(props, ref) {
         <h2>Competenza</h2>
         <h2>Affidabilità</h2>
       </div>
-      {/*
-        TODO: inserire LOGO - BADGE - BUTTONS in un div con flex-row, cambiando l'allineamento; in tal modo,
-        se lo schermo viene ridotto molto in altezza, risultano affiancati ma non scompaiono.
-
-        TODO: action buttons always on landing page, without scroll needed.
-      */}
       <div className="flex flex-col grow-0">
         <Image
           src={landingBadge}

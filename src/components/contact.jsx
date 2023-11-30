@@ -3,9 +3,10 @@ import contactBg from "../../images/contactBg.jpeg";
 import marcoProfile from "../../images/marco-profile.webp";
 import giacomoProfile from "../../images/giacomo-profile.webp";
 import Image from "next/image";
+import PhotoGallery from "./photoGallery/PhotoGallery";
+import Link from "next/link";
 
 import { Lexend, Roboto, Merriweather } from "next/font/google";
-import Link from "next/link";
 const lexend = Lexend({
   subsets: ["latin"],
   display: "swap",
@@ -79,34 +80,32 @@ function ContactCard({ name, phone, phoneString, mail, img }) {
   );
 }
 
-function PhotoGallery() {
-  return <div className="w-full h-[244px] bg-salice-700 my-[80px]"></div>;
-}
-
 function Quote() {
   return (
-    <div
-      className="w-[290px] lg:w-[400px] xl:w-[600px] h-[200px] rounded-lg border-2 border-salice-200 shadow-md \\
-    flex flex-col justify-between mx-auto bg-white py-[8px] lg:py-[20px] px-[18px] mb-[20px] lg:mb-[40px]"
-    >
-      <p
-        className={`${merriweatherItalic.className} text-center text-shadow text-md mb-[25px]`}
+    <div className="pt-4 pb-10">
+      <div
+        className="w-[290px] lg:w-[400px] xl:w-[600px] h-[200px] rounded-lg border-2 border-salice-200 shadow-md \\
+    flex flex-col justify-between mx-auto bg-white py-[8px] lg:py-[20px] px-[18px]"
       >
-        Il corpo è un meccanismo di autoguarigione e il ruolo dell'osteopata è
-        facilitare questo processo.
-      </p>
-      <p
-        className={`${merriweather.className} text-right text-sm lg:w-[60%] mr-0 ml-auto`}
-      >
-        W. G. Sutherland, fondatore dell'osteopatia craniale
-      </p>
+        <p
+          className={`${merriweatherItalic.className} text-center text-shadow text-md mb-[25px]`}
+        >
+          Il corpo è un meccanismo di autoguarigione e il ruolo dell'osteopata è
+          facilitare questo processo.
+        </p>
+        <p
+          className={`${merriweather.className} text-right text-sm lg:w-[60%] mr-0 ml-auto`}
+        >
+          W. G. Sutherland, fondatore dell'osteopatia craniale
+        </p>
+      </div>
     </div>
   );
 }
 
 export default forwardRef(function Contact(props, ref) {
   return (
-    <section className="pt-[100px] relative overflow-hidden bg-white -z-30 h-screen">
+    <section className="pt-[100px] relative bg-white -z-30">
       <Image
         src={contactBg}
         alt="Sfondo per la sezione dei contatti"
