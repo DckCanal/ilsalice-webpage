@@ -21,17 +21,19 @@ import Navbar from "../components/navbar";
 
 import LandingView from "../components/landing";
 import Contact from "../components/contact";
-import Obiettivi from "../components/target";
 import Target from "../components/target";
+import Treatments from "../components/treatments";
 
 function HomePage() {
   const landingRef = useRef(null);
   const contactRef = useRef(null);
   const targetRef = useRef(null);
+  const treatmentsRef = useRef(null);
   const refsMap = {
     landing: landingRef,
     contact: contactRef,
     target: targetRef,
+    treatments: treatmentsRef,
   };
   return (
     <>
@@ -57,6 +59,7 @@ function HomePage() {
         <LandingView ref={landingRef} />
         <Contact ref={contactRef} />
         <Target ref={targetRef} />
+        <Treatments ref={treatmentsRef} />
         {/* <ChiSiamo />
         <Perche />
         <CosaFacciamo />
