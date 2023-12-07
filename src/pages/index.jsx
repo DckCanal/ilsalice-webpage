@@ -23,17 +23,20 @@ import LandingView from "../components/landing";
 import Contact from "../components/contact";
 import Target from "../components/target";
 import Treatments from "../components/treatments";
+import Footer from "../components/footer";
 
 function HomePage() {
   const landingRef = useRef(null);
   const contactRef = useRef(null);
   const targetRef = useRef(null);
   const treatmentsRef = useRef(null);
+  const footerRef = useRef(null);
   const refsMap = {
     landing: landingRef,
     contact: contactRef,
     target: targetRef,
     treatments: treatmentsRef,
+    footer: footerRef,
   };
   return (
     <>
@@ -60,6 +63,7 @@ function HomePage() {
         <Contact ref={contactRef} />
         <Target ref={targetRef} />
         <Treatments ref={treatmentsRef} />
+        <Footer ref={footerRef} />
         {/* <ChiSiamo />
         <Perche />
         <CosaFacciamo />
