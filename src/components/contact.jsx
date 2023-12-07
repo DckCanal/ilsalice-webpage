@@ -114,7 +114,7 @@ export default forwardRef(function Contact(props, ref) {
         style={{
           objectFit: "cover",
         }}
-        className="relative opacity-30 -z-20"
+        className="relative opacity-30 -z-20 blur-sm"
       />
       <div
         className="flex flex-col xl:flex-row xl:mx-[40px] mb-[80px] justify-between gap-[27px] \\

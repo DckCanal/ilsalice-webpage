@@ -41,7 +41,7 @@ function Card({ title, text }) {
 
 export default forwardRef(function Treatments(props, ref) {
   return (
-    <section className="relative bg-white -z-30">
+    <section className="relative bg-white -z-30 pb-10">
       <Image
         src={treatmentsBg}
         alt="Sfondo per la sezione dei trattamenti"
@@ -50,7 +50,7 @@ export default forwardRef(function Treatments(props, ref) {
         style={{
           objectFit: "cover",
         }}
-        className="relative opacity-60 -z-20"
+        className="relative opacity-40 blur-[3px] -z-20"
       />
       <h2
         className={`${lexend.className} text-3xl text-white font-semibold p-4 pb-3 text-shadow`}
