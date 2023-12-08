@@ -24,6 +24,7 @@ import Contact from "../components/contact";
 import Target from "../components/target";
 import Treatments from "../components/treatments";
 import Footer from "../components/footer";
+import Map from "../components/map";
 
 function HomePage() {
   const landingRef = useRef(null);
@@ -31,12 +32,14 @@ function HomePage() {
   const targetRef = useRef(null);
   const treatmentsRef = useRef(null);
   const footerRef = useRef(null);
+  const mapRef = useRef(null);
   const refsMap = {
     landing: landingRef,
     contact: contactRef,
     target: targetRef,
     treatments: treatmentsRef,
     footer: footerRef,
+    map: mapRef,
   };
   return (
     <>
@@ -63,6 +66,7 @@ function HomePage() {
         <Contact ref={contactRef} />
         <Target ref={targetRef} />
         <Treatments ref={treatmentsRef} />
+        <Map ref={mapRef} />
         <Footer ref={footerRef} />
         {/* <ChiSiamo />
         <Perche />
