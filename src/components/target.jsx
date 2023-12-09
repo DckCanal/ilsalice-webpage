@@ -26,16 +26,18 @@ const nunito = Nunito({
 });
 
 const Card = ({ title, text, children }) => (
-  <div className="w-[300px] flex flex-col bg-white shadow-material my-10 rounded-t-xl">
-    {children}
-    <div className="p-2">
-      <h3
-        style={{ fontVariantCaps: "small-caps" }}
-        className={`${roboto.className} text-left text-xl mt-5 mb-2`}
-      >
-        {title}
-      </h3>
-      <p className={`text-left ${nunito.className} text-sm`}>{text}</p>
+  <div>
+    <div className="max-w-[300px] h-[420px] flex flex-col bg-white shadow-material rounded-t-xl mx-auto">
+      {children}
+      <div className="p-2 grow flex flex-col justify-around">
+        <h3
+          style={{ fontVariantCaps: "small-caps" }}
+          className={`${roboto.className} text-left text-xl mt-5 mb-2`}
+        >
+          {title}
+        </h3>
+        <p className={`text-left ${nunito.className} text-sm`}>{text}</p>
+      </div>
     </div>
   </div>
 );
@@ -47,7 +49,7 @@ export default forwardRef(function Target(props, ref) {
         background:
           "linear-gradient(rgba(157,168,134,1) 0%, rgba(223,228,214,1) 49%, rgba(157,168,134,1) 100%)",
       }}
-      className="pt-20"
+      className="pt-20 pb-10"
       ref={ref}
     >
       <h2
@@ -55,11 +57,12 @@ export default forwardRef(function Target(props, ref) {
       >
         Cosa trattiamo
       </h2>
-      <div className="border-2 border-white w-64 shadow-md" />
-      <div className="flex flex-row flex-wrap justify-evenly gap-6 min-[320px]:mx-2">
+      <div className="border-2 border-white w-64 shadow-md min-[320px]:mx-2" />
+      {/* flex flex-row flex-wrap justify-evenly gap-6  */}
+      <div className="grid place-content-center gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10">
         <Card
           title="Dolori muscolo-scheletrici"
-          text="Il mal di schiena, i dolori cervicali o i problemi articolari sono una causa comune di disagio. L'osteopatia può aiutare ad alleviare questi sintomi e a ristabilire l'equilibrio del corpo."
+          text="Il mal di schiena, i dolori cervicali o i problemi articolari sono una causa comune di disagio. Se vengono trascurati per troppo tempo possono anche diventare sintomi invalidanti. L'osteopatia può aiutare ad alleviare questi sintomi e a ristabilire l'equilibrio del corpo."
         >
           <Image
             width={300}
