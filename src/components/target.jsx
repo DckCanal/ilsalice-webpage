@@ -40,7 +40,7 @@ const LeftCard = ({ title, text, children }) => (
 );
 
 const Card = ({ title, text, children }) => (
-  <div className="w-[300px] flex flex-col bg-white shadow-md my-10 rounded-t-xl">
+  <div className="w-[300px] flex flex-col bg-white shadow-material my-10 rounded-t-xl">
     {children}
     <div className="p-2">
       <h3

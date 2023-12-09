@@ -30,7 +30,7 @@ export default function Navbar({ smoothScrollFunc }) {
       className={`bg-white ${
         !open ? "h-[60px]" : "h-[240px]"
       } rounded-md mt-3 flex flex-col border border-t-1 border-salice-50 \\ 
-      shadow-md fixed w-[95%] max-w-[1420px] left-1/2 -translate-x-1/2 transition-[height] duration-500 z-10 overflow-hidden`}
+      shadow-md fixed w-[95%] max-w-[1420px] left-1/2 -translate-x-1/2 transition-[height] duration-500 z-40 overflow-hidden`}
     >
       <div className="flex flex-row justify-between">
         <Link

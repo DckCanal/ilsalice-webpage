@@ -37,17 +37,15 @@ const merriweatherItalic = Merriweather({
 });
 
 function ContactCard({ name, phone, phoneString, mail, img }) {
+  const linkText = `tel:${phone}`;
   return (
-    // border-b-[3px]
     <div
-      className={`w-[360px] lg:w-[500px] ${
-        mail ? "h-[134px] lg:h-[152px]" : "h-[84px] lg:h-[96px]"
-      }  xl:h-[270px] rounded-md  border  \\
+      className={`w-[360px] lg:w-[500px] h-[100px] lg:h-[110px]  xl:h-[270px] rounded-md  border  \\
     border-salice-50 bg-white flex flex-row gap-[8px]`}
     >
       <div
         className="relative h-[64px] w-[64px] xl:h-[96px] xl:w-[96px] overflow-hidden \\
-       my-[7px] lg:my-[12px] xl:my-[20px] ml-[8px] lg:mx-[20px]"
+       my-[18px] lg:my-[23px] xl:my-[20px] ml-[18px] lg:ml-[23px] lg:mx-[20px]"
       >
         <Image
           // height={64}
@@ -62,39 +60,40 @@ function ContactCard({ name, phone, phoneString, mail, img }) {
       </div>
       <div className="grow">
         <h3
-          className={`${robotoHeavy.className} text-md lg:text-lg xl:text-2xl xl:ml-[20px] mt-2 xl:mt-[48px] uppercase`}
+          className={`${robotoHeavy.className} text-lg lg:text-lg xl:text-2xl ml-2 xl:ml-[20px] mt-2 xl:mt-[48px] uppercase`}
           // style={{ fontVariantCaps: "petite-caps" }}
           //style={{ fontVariantCaps: "small-caps" }}
         >
           {name}
         </h3>
         <div className="max-xl:hidden border border-gray-500 w-[300px] mt-[24px] ml-[18px]" />
-
-        <a
-          href={`tel:${phone}`}
-          className="flex flex-row border border-salice-700 bg-salice-50/25 shadow-md rounded-lg w-36 lg:w-40 xl:w-44 lg:mt-1 xl:mt-6 ml-4"
-        >
-          <PhoneArrowUpRightIcon className="h-5 w-5 xl:h-6 xl:w-6 mx-2 my-auto" />
-          <h4
-            className={`${roboto.className} text-md lg:text-lg xl:text-xl my-2`}
-          >
-            {phoneString}
-          </h4>
-        </a>
-
-        {mail && (
+        <div className="flex flex-row xl:flex-col max-xl:ml-2">
           <a
-            href={`mailto:${mail}`}
-            className="flex flex-row border border-salice-700 rounded-lg w-fit mt-2 xl:my-6 ml-4"
+            href={linkText}
+            className="flex flex-row border border-salice-700 bg-salice-50/25 shadow-material rounded-lg w-36 lg:w-40 xl:w-44 mt-1 xl:mt-6 ml-4"
           >
-            <EnvelopeIcon className="h-5 w-5 xl:h-6 xl:w-6 mx-2 my-auto" />
+            <PhoneArrowUpRightIcon className="h-5 w-5 xl:h-6 xl:w-6 mx-2 my-auto" />
             <h4
-              className={`${roboto.className} text-md lg:text-lg xl:text-xl  my-2 mr-4`}
+              className={`${roboto.className} text-md lg:text-lg xl:text-xl my-2`}
             >
-              {mail}
+              {phoneString}
             </h4>
           </a>
-        )}
+
+          {mail && (
+            <a
+              href={`mailto:${mail}`}
+              className="flex flex-row border border-salice-700 rounded-lg w-fit mt-2 xl:my-6 ml-8 lg:ml-12 xl:ml-4"
+            >
+              <EnvelopeIcon className="h-5 w-5 xl:h-6 xl:w-6 mx-2 my-auto" />
+              <h4
+                className={`${roboto.className} text-xl my-2 mr-4 max-xl:hidden`}
+              >
+                {mail}
+              </h4>
+            </a>
+          )}
+        </div>
       </div>
       <div></div>
     </div>
@@ -105,7 +104,7 @@ function Quote() {
   return (
     <div className="pt-4 pb-10">
       <div
-        className="w-[290px] lg:w-[400px] xl:w-[600px] h-[200px] rounded-lg border border-salice-200 shadow-md \\
+        className="w-[290px] lg:w-[400px] xl:w-[600px] h-[200px] rounded-lg border border-salice-200 shadow-material \\
     flex flex-col justify-between mx-auto bg-white py-[8px] lg:py-[20px] px-[18px]"
       >
         <p
@@ -126,7 +125,7 @@ function Quote() {
 
 export default forwardRef(function Contact(props, ref) {
   return (
-    <section className="pt-[100px] relative bg-white -z-30" ref={ref}>
+    <section className="pt-[100px] relative bg-white z-10" ref={ref}>
       <Image
         src={contactBg}
         alt="Sfondo per la sezione dei contatti"

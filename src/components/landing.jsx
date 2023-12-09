@@ -48,7 +48,7 @@ export default forwardRef(function LandingView(props, ref) {
           alt="Immagine di benvenuto"
           width={180}
           height={180}
-          className="rounded-full border-2 border-white shadow-md mx-auto"
+          className="rounded-full border-2 border-white shadow-material mx-auto"
         />
         <div className="mt-4">
           <h3 className="italic text-2xl lg:text-3xl text-shadow text-center text-[#626262]">
@@ -75,19 +75,10 @@ export default forwardRef(function LandingView(props, ref) {
             MASSOFISIOTERAPIA <br /> OSTEOPATIA
           </h5>
         </div>
-        {/* <div className="order-1 min-[330px]:order-2">
-          <h3 className="italic text-2xl lg:text-3xl text-shadow text-center text-[#626262]">
-            al vostro servizio
-          </h3>
-          <div
-            className="mt-4 border border-salice-50 w-[220px] lg:w-[270px] \\
-          mx-auto mb-[30px]"
-          />
-        </div> */}
         <div className="flex flex-col min-[330px]:justify-end gap-4 text-min-[330px] lg:text-base order-3">
           <a
             className={`border-0 border-salice-50 rounded-xl flex flex-row w-32 h-12 mx-auto \\
-              ${robotoBold.className} text-sm no-click-bg text-white bg-salice-400`}
+              ${robotoBold.className} text-sm no-click-bg text-white bg-salice-400 shadow-material`}
             href="https://wa.me/3385330241"
             target="_blank"
             aria-label="Apri chat su WhatsApp"
@@ -125,39 +116,13 @@ export default forwardRef(function LandingView(props, ref) {
             objectFit: "cover",
           }}
         />
-        {/* translate-y-[500px] top-[-10px] */}
+
         <div
           className="w-[2000px] h-[1200px] -translate-y-[60px] min-[330px]:-translate-y-[20px] bg-white \\
         absolute top-[50%] left-1/2 -translate-x-[1000px] rotate-[16deg] -z-[1] \\
         border-t-4 border-[#D9D9D9]"
         />
-        {/* top-[377px] */}
-        {/* <Image
-          src={landingBadge}
-          alt="Immagine di benvenuto"
-          width={180}
-          height={180}
-          className="absolute rounded-full border-2 border-white top-[50%] left-1/2 \\
-          -translate-x-1/2 shadow-md"
-        />
-        {/* top-[118px] */}
-
-        {/* top-[581px] lg:top-[620px] */}
-        {/*<div className="absolute top-[60%]  left-1/2 -translate-x-1/2 ">
-          <h3 className="italic text-2xl lg:text-3xl text-shadow text-center text-[#626262]">
-            al vostro servizio
-          </h3>
-          <div
-            className="mt-4 border border-salice-50 w-[220px] lg:w-[270px] \\
-          mx-auto mb-[30px]"
-          />
-        </div>*/}
       </div>
-      {/* <div className="w-[2000px] h-[500px] bg-white relative -top-32 -left-1/2 rotate-[16deg] -z-[1] border-t-4 border-[#D9D9D9]" /> */}
-
-      {/* <div>
-        <div className="flex flex-row justify-between"></div>
-      </div> */}
     </section>
   );
 });
