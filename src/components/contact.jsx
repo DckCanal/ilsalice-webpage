@@ -70,7 +70,7 @@ function ContactCard({ name, phone, phoneString, mail, img }) {
         <div className="flex flex-row xl:flex-col max-xl:ml-2">
           <a
             href={linkText}
-            className="flex flex-row border border-salice-700 bg-salice-50/25 shadow-material rounded-lg w-36 lg:w-40 xl:w-44 mt-1 xl:mt-6 ml-4"
+            className="flex flex-row border border-salice-700 bg-gradient-to-br from-salice-50/25 to-salice-50/75 shadow-material rounded-lg w-36 lg:w-40 xl:w-44 mt-1 xl:mt-6 ml-4"
           >
             <PhoneArrowUpRightIcon className="h-5 w-5 xl:h-6 xl:w-6 mx-2 my-auto" />
             <h4

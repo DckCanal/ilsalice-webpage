@@ -78,7 +78,7 @@ export default forwardRef(function LandingView(props, ref) {
         <div className="flex flex-col min-[330px]:justify-end gap-4 text-min-[330px] lg:text-base order-3">
           <a
             className={`border-0 border-salice-50 rounded-xl flex flex-row w-32 h-12 mx-auto \\
-              ${robotoBold.className} text-sm no-click-bg text-white bg-salice-400 shadow-material`}
+              ${robotoBold.className} text-sm no-click-bg text-white bg-gradient-to-br from-salice-100 to-salice-500 shadow-material`}
             href="https://wa.me/3385330241"
             target="_blank"
             aria-label="Apri chat su WhatsApp"

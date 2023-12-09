@@ -1,5 +1,13 @@
 import { forwardRef } from "react";
 import Image from "next/image";
+
+import cranio from "../../images/cranio.jpg";
+import viscerale from "../../images/viscerale.jpg";
+import fasciale from "../../images/fasciale.jpg";
+import riabilitazione from "../../images/riabilitazione.jpg";
+import massaggio from "../../images/massaggio.jpg";
+import posturale from "../../images/posturale.jpg";
+
 import treatmentsBg from "../../images/gallery/IMG_1667.jpeg";
 
 import { Roboto, Nunito, Lexend } from "next/font/google";
@@ -20,20 +28,30 @@ const lexend = Lexend({
   display: "swap",
 });
 
-function Card({ title, text }) {
+function Card({ title, text, image }) {
   return (
-    <div className="rounded-lg w-44 bg-white border-2">
+    <div className="rounded-lg w-64  shadow-material">
       <div className={`text-center ${roboto.className} `}>
         <h4
-          className="text-xl text-white bg-salice-600 rounded-t-lg py-4"
+          className="text-xl text-white bg-gradient-to-br from-salice-100 to-salice-600 rounded-t-lg h-16 py-4"
           style={{ fontVariantCaps: "small-caps" }}
         >
           {title}
         </h4>
-        {/* my-auto?? */}
-        <p className={`${nunito.className} text-center px-5 pt-6 pb-3`}>
-          {text}
-        </p>
+        <div
+          className="relative w-full h-72"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 60%)",
+          }}
+        >
+          <Image src={image} alt="" fill={true} className="-z-10" />
+          <p
+            className={`${nunito.className} text-center px-5 pt-44 pb-3 h-72 font-medium`}
+          >
+            {text}
+          </p>
+        </div>
       </div>
     </div>
   );
@@ -63,26 +81,32 @@ export default forwardRef(function Treatments(props, ref) {
         <Card
           title="Viscerale"
           text="Rilascio dei visceri, degli organi e delle strutture legamentose e degli apparati di sospensione"
-        />
-        <Card
-          title="Fasciale"
-          text="Distensione delle strutture legamentose del corpo, per eliminare aderenze e fissazioni disfunzionali"
-        />
-        <Card
-          title="Cranio sacrale"
-          text="Recupero della respirazione craniale e della circolazione del liquido cerebro spinale"
+          image={viscerale.src}
         />
         <Card
           title="Riabilitativo"
           text="Recupero della piena funzionalità a seguito di fratture, chirurgie o traumi"
+          image={riabilitazione.src}
         />
         <Card
-          title="Posturale"
-          text="Miglioramento della postura ed esercizi per il suo mantenimento"
+          title="Fasciale"
+          text="Distensione delle strutture legamentose del corpo, per eliminare aderenze e fissazioni disfunzionali"
+          image={fasciale.src}
         />
         <Card
           title="Drenante"
           text="Stimolo alla circolazione della linfa e al pieno recupero funzionale del sistema linfatico"
+          image={massaggio.src}
+        />
+        <Card
+          title="Cranio sacrale"
+          text="Recupero della respirazione craniale e della circolazione del liquido cerebro spinale"
+          image={cranio.src}
+        />
+        <Card
+          title="Posturale"
+          text="Miglioramento della postura ed esercizi per il suo mantenimento"
+          image={posturale.src}
         />
       </div>
     </section>

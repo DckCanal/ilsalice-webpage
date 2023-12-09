@@ -31,7 +31,7 @@ export default function WhatsAppFAB({ refToObserve }) {
       href="https://wa.me/3385330241"
       target="_blank"
       aria-label="Apri chat su WhatsApp"
-      className={`fixed bottom-4 right-4 z-50 bg-gradient-to-br from-blue-200 to-salice-500 rounded-full shadow-material default-hidden ${
+      className={`fixed bottom-4 right-4 z-50 bg-gradient-to-br from-salice-100 to-salice-500 rounded-full shadow-material default-hidden ${
         isVisible ? "visible" : ""
       }`}
     >
