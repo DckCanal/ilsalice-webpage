@@ -40,7 +40,7 @@ function ContactCard({ name, phone, phoneString, mail, img }) {
   const linkText = `tel:${phone}`;
   return (
     <div
-      className={`w-[360px] lg:w-[500px] h-[100px] lg:h-[110px]  xl:h-[270px] rounded-md  border  \\
+      className={`max-w-full overflow-clip w-[360px] lg:w-[500px] h-[100px] lg:h-[110px]  xl:h-[270px] rounded-md  border  \\
     border-salice-50 bg-white flex flex-row gap-[8px]`}
     >
       <div

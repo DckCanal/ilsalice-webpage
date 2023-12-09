@@ -19,6 +19,7 @@ import Navbar from "../components/navbar";
 //   Mappa,
 // } from "../components/old/content";
 
+import WhatsAppFAB from "../components/floatingWhatsAppButton";
 import LandingView from "../components/landing";
 import Contact from "../components/contact";
 import Target from "../components/target";
@@ -63,6 +64,7 @@ function HomePage() {
       </header>
 
       <main>
+        <WhatsAppFAB refToObserve={landingRef} />
         <LandingView ref={landingRef} />
         <Contact ref={contactRef} />
         <Target ref={targetRef} />
