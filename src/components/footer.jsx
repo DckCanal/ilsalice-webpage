@@ -1,4 +1,3 @@
-import { forwardRef } from "react";
 import { Roboto } from "next/font/google";
 
 const roboto = Roboto({
@@ -20,7 +19,7 @@ const robotoLightItalic = Roboto({
   style: "italic",
 });
 
-export default forwardRef(function Footer(props, ref) {
+export default function Footer(props) {
   return (
     <section className="bg-[#636363] py-4 text-white text-center">
       <h3 className={`text-base ${roboto.className}`}>il Salice</h3>
@@ -41,4 +40,4 @@ export default forwardRef(function Footer(props, ref) {
       </h5>
     </section>
   );
-});
+}

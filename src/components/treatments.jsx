@@ -41,7 +41,7 @@ function Card({ title, text }) {
 
 export default forwardRef(function Treatments(props, ref) {
   return (
-    <section className="relative bg-white -z-30 pb-10">
+    <section className="relative bg-white -z-30 pb-10 pt-20" ref={ref}>
       <Image
         src={treatmentsBg}
         alt="Sfondo per la sezione dei trattamenti"

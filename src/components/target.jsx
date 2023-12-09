@@ -53,7 +53,7 @@ const Card = ({ title, text, children }) => (
     </div>
   </div>
 );
-export default forwardRef(function Target() {
+export default forwardRef(function Target(props, ref) {
   return (
     <section
       style={{
@@ -61,7 +61,8 @@ export default forwardRef(function Target() {
         background:
           "linear-gradient(rgba(157,168,134,1) 0%, rgba(223,228,214,1) 49%, rgba(157,168,134,1) 100%)",
       }}
-      className=""
+      className="pt-20"
+      ref={ref}
     >
       <h2
         className={`${lexend.className} text-3xl text-white font-semibold p-4 pb-3 text-shadow`}

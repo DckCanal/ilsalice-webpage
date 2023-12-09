@@ -56,6 +56,7 @@ function HomePage() {
           smoothScrollFunc={(ev, target) => {
             ev.preventDefault();
             if (!refsMap[target]) return;
+            console.dir(refsMap[target]);
             refsMap[target].current.scrollIntoView({ behavior: "smooth" });
           }}
         />

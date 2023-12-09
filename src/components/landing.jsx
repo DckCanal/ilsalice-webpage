@@ -26,7 +26,6 @@ const robotoBold = Roboto({
   display: "swap",
   weight: "500",
 });
-const minScreenHeight = 600;
 export default forwardRef(function LandingView(props, ref) {
   return (
     <section
@@ -86,10 +85,11 @@ export default forwardRef(function LandingView(props, ref) {
           />
         </div> */}
         <div className="flex flex-col min-[330px]:justify-end gap-4 text-min-[330px] lg:text-base order-3">
-          <Link
+          <a
             className={`border-0 border-salice-50 rounded-xl flex flex-row w-32 h-12 mx-auto \\
               ${robotoBold.className} text-sm no-click-bg text-white bg-salice-400`}
             href="https://wa.me/3385330241"
+            target="_blank"
             aria-label="Apri chat su WhatsApp"
           >
             <Image
@@ -100,9 +100,9 @@ export default forwardRef(function LandingView(props, ref) {
               className="h-[34px] w-[34px] ml-[8px] my-[5px]"
             />
             <span className="mt-[13px] ml-[15px]">SCRIVI</span>
-          </Link>
+          </a>
           <Link
-            className={`border-2 border-salice-50 rounded-xl flex flew-row w-32 h-12 ${roboto.className} text-sm no-click-bg mx-auto`}
+            className={`border border-salice-50 rounded-xl flex flew-row w-32 h-12 ${roboto.className} text-sm no-click-bg mx-auto`}
             href="#"
             aria-label="Link alla mappa"
           >
