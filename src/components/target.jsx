@@ -5,6 +5,9 @@ import Image from "next/image";
 import lombare from "../../images/lombare.jpeg";
 import corsa from "../../images/corsa.jpeg";
 import bambino from "../../images/bambino.jpeg";
+import ansia from "../../images/ansia.jpg";
+import visceri from "../../images/visceri.jpg";
+import anziano from "../../images/anziano.jpg";
 
 const lexend = Lexend({
   subsets: ["latin"],
@@ -21,23 +24,6 @@ const nunito = Nunito({
   subsets: ["latin"],
   display: "swap",
 });
-
-const LeftCard = ({ title, text, children }) => (
-  <div className="w-[467px] p-2 bg-white shadow-md my-10 -translate-x-28">
-    <h3
-      style={{ fontVariantCaps: "small-caps" }}
-      className={`${roboto.className} text-right text-xl`}
-    >
-      {title}
-    </h3>
-    <div className="flex flex-row gap-3 mt-2">
-      <div className="">{children}</div>
-      <p className={`text-right ${nunito.className} text-sm w-[184px]`}>
-        {text}
-      </p>
-    </div>
-  </div>
-);
 
 const Card = ({ title, text, children }) => (
   <div className="w-[300px] flex flex-col bg-white shadow-material my-10 rounded-t-xl">
@@ -89,8 +75,12 @@ export default forwardRef(function Target(props, ref) {
           title="Problemi viscerali"
           text="La sfera viscerale viene tenuta in grande considerazione dall’osteopatia. Che si tratti di un blocco del diaframma, di difficoltà nella digestione, di acidità di stomaco o di un fegato in sovraccarico, il trattamento viscerale osteopatico può contribuire a risolvere il problema."
         >
-          {/* <Image width={300} height={150} src={anziano.src}            className="rounded-t-xl"
- /> */}
+          <Image
+            width={300}
+            height={150}
+            src={visceri.src}
+            className="rounded-t-xl"
+          />
         </Card>
         <Card
           title="Sportivi"
@@ -108,15 +98,23 @@ export default forwardRef(function Target(props, ref) {
           title="Anziani"
           text="Con il progredire dell’età possono manifestarsi sempre più spesso dei dolori o delle riduzioni nella mobilità articolare che, se non trattati, rischiano di avere un impatto fortemente negativo nella vita di tutti i giorni. Il trattamento manuale può sicuramente aiutarti a migliorare la qualità di vita."
         >
-          {/* <Image width={300} height={150} src={anziano.src}             className="rounded-t-xl"
-/> */}
+          <Image
+            width={300}
+            height={150}
+            src={anziano.src}
+            className="rounded-t-xl"
+          />
         </Card>
         <Card
           title="Disturbi da ansia e stress"
           text="I ritmi e le preoccupazioni della società attuale creano spesso situazioni prolungate di ansia e stress, che si manifestano con sintomi più o meno gravi: mal di testa, gastriti, difficoltà a respirare o a concentrarsi... Il trattamento manuale osteopatico aiuta il corpo a ridurre il livello di stress mentre agisce anche direttamente sui sintomi più fastidiosi dell’ansia."
         >
-          {/* <Image width={300} height={150} src={anziano.src}            className="rounded-t-xl"
- /> */}
+          <Image
+            width={300}
+            height={150}
+            src={ansia.src}
+            className="rounded-t-xl"
+          />
         </Card>
         <Card
           title="Età dello sviluppo"
