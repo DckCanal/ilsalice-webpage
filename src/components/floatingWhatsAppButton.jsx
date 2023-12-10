@@ -1,10 +1,9 @@
 import WAIconWhite from "../../vendors/logo/WA-white.png";
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function WhatsAppFAB({ refToObserve }) {
   const [isVisible, setIsVisible] = useState(false);
-  //const ref = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -33,14 +32,14 @@ export default function WhatsAppFAB({ refToObserve }) {
       aria-label="Apri chat su WhatsApp"
       className={`fixed bottom-4 right-4 z-50 bg-gradient-to-br from-salice-100 to-salice-500 rounded-full shadow-material default-hidden ${
         isVisible ? "visible" : ""
-      }`}
+      } docw:right-1/2 docw:translate-x-[704px]`}
     >
       <Image
         src={WAIconWhite}
         alt="Logo WhatsApp"
         height={40}
         width={40}
-        className="h-[40px] w-[40px] m-[15px]"
+        className="h-[40px] w-[40px] m-[12px]"
       />
     </a>
   );

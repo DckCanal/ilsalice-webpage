@@ -20,6 +20,9 @@ module.exports = {
       boxShadow: {
         material: "0px 4px 5px 0px rgba(0, 0, 0, 0.40)",
       },
+      screens: {
+        docw: "1440px",
+      },
     },
   },
   plugins: [],
