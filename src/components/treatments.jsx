@@ -30,27 +30,29 @@ const lexend = Lexend({
 
 function Card({ title, text, image }) {
   return (
-    <div className="rounded-lg w-64  shadow-material">
-      <div className={`text-center ${roboto.className} `}>
-        <h4
-          className="text-xl text-white bg-gradient-to-br from-salice-100 to-salice-600 rounded-t-lg h-16 py-4"
-          style={{ fontVariantCaps: "small-caps" }}
-        >
-          {title}
-        </h4>
-        <div
-          className="relative w-full h-72"
-          style={{
-            background:
-              "linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 60%)",
-          }}
-        >
-          <Image src={image} alt="" fill={true} className="-z-10" />
-          <p
-            className={`${nunito.className} text-center px-5 pt-44 pb-3 h-72 font-medium`}
+    <div>
+      <div className="rounded-lg w-64  shadow-material mx-auto">
+        <div className={`text-center ${roboto.className} `}>
+          <h4
+            className="text-xl text-white bg-gradient-to-br from-salice-100 to-salice-600 rounded-t-lg h-16 py-4"
+            style={{ fontVariantCaps: "small-caps" }}
           >
-            {text}
-          </p>
+            {title}
+          </h4>
+          <div
+            className="relative w-full h-72"
+            style={{
+              background:
+                "linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 60%)",
+            }}
+          >
+            <Image src={image} alt="" fill={true} className="-z-10" />
+            <p
+              className={`${nunito.className} text-center px-5 pt-44 pb-3 h-72 font-medium`}
+            >
+              {text}
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -77,7 +79,8 @@ export default forwardRef(function Treatments(props, ref) {
       </h2>
       <div className="border-2 border-white w-56 shadow-md" />
 
-      <div className="flex flex-row flex-wrap gap-6 justify-evenly bg-transparent mt-10 min-[320px]:mx-2">
+      {/* <div className="flex flex-row flex-wrap gap-6 justify-evenly bg-transparent mt-10 min-[320px]:mx-2"> */}
+      <div className="grid place-content-center gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10">
         <Card
           title="Viscerale"
           text="Rilascio dei visceri, degli organi e delle strutture legamentose e degli apparati di sospensione"
