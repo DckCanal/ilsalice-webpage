@@ -114,6 +114,7 @@ export default forwardRef(function LandingView(props, ref) {
           fill={true}
           style={{
             objectFit: "cover",
+            animation: "zoom 16s linear infinite",
           }}
         />
 
