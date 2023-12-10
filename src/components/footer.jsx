@@ -33,10 +33,10 @@ export default function Footer(props) {
         San Giovanni in Marignano, 47842, RN
       </h5>
       <h5 className={`mt-3 ${robotoLight.className}`}>
-        Marco De Canal <a href="tel:3385330241">338 533 0241</a>
+        <a href="tel:3385330241">Marco De Canal 338 533 0241</a>
       </h5>
       <h5 className={`${robotoLight.className}`}>
-        Giacomo Muccioli 339 318 2797
+        <a href="tel:3393182797">Giacomo Muccioli 339 318 2797</a>
       </h5>
     </section>
   );
