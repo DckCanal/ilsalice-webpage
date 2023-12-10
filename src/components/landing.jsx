@@ -1,19 +1,16 @@
 import landingBg from "../../images/landingBg.jpeg";
 import landingBadge from "../../images/landingBadge.jpeg";
 import logo from "../../images/icons/logo - alpha - min.png";
+import logoDark from "../../images/icons/logo - white alpha.png";
 
 import WAIconGreen from "../../vendors/logo/WA-green.png";
 import WAIconWhite from "../../vendors/logo/WA-white.png";
 import { MapPinIcon } from "@heroicons/react/24/outline";
 
 import Image from "next/image";
-import Link from "next/link";
 import { forwardRef } from "react";
-import { Lexend, Roboto } from "next/font/google";
-const lexend = Lexend({
-  subsets: ["latin"],
-  display: "swap",
-});
+import { Roboto } from "next/font/google";
+import LandingText from "./landingText";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -33,15 +30,7 @@ export default forwardRef(function LandingView(props, ref) {
       id="landing"
       ref={ref}
     >
-      <div
-        className={`font-medium text-2xl \\
-           mx-auto text-center ${lexend.className} \\
-          text-[#284800] text-shadow grow flex flex-col justify-around`}
-      >
-        <h2>Ascolto</h2>
-        <h2>Competenza</h2>
-        <h2>Affidabilità</h2>
-      </div>
+      <LandingText />
       <div className="flex flex-col grow-0">
         <Image
           src={landingBadge}
@@ -51,7 +40,7 @@ export default forwardRef(function LandingView(props, ref) {
           className="rounded-full border-2 border-white shadow-material mx-auto"
         />
         <div className="mt-4">
-          <h3 className="italic text-2xl lg:text-3xl text-shadow text-center text-[#626262]">
+          <h3 className="italic text-2xl lg:text-3xl text-shadow text-center text-[#626262] dark:text-white">
             al vostro servizio
           </h3>
           <div
@@ -62,13 +51,20 @@ export default forwardRef(function LandingView(props, ref) {
       </div>
 
       <div className="flex flex-col min-[330px]:flex-row justify-between my-6 mx-6 grow">
-        <div className="flex flex-col justify-center min-[330px]:justify-end order-2 min-[330px]:order-1 text-center min-[330px]:text-left">
+        <div className="flex flex-col justify-center min-[330px]:justify-end order-2 min-[330px]:order-1 text-center min-[330px]:text-left dark:text-white">
           <Image
             src={logo}
             height={74}
             width={74}
             alt="Logo"
-            className="mx-auto min-[330px]:mx-0"
+            className="mx-auto min-[330px]:mx-0 block dark:hidden"
+          />
+          <Image
+            src={logoDark}
+            height={74}
+            width={74}
+            alt="Logo"
+            className="mx-auto min-[330px]:mx-0 hidden dark:block"
           />
           <h4 className="italic text-xl lg:text-2xl">il Salice</h4>
           <h5 className="font-light text-sm lg:text-base">
@@ -92,19 +88,20 @@ export default forwardRef(function LandingView(props, ref) {
             />
             <span className="mt-[13px] ml-[15px]">SCRIVI</span>
           </a>
-          <Link
-            className={`border border-salice-50 rounded-xl flex flew-row w-32 h-12 ${roboto.className} text-sm no-click-bg mx-auto`}
-            href="#"
+          <a
+            className={`border border-salice-50 dark:border-white dark:text-white rounded-xl flex flew-row w-32 h-12 ${roboto.className} text-sm no-click-bg mx-auto dark:bg-gradient-to-br dark:from-salice-600 dark:to-salice-800`}
+            href="https://maps.google.com/maps/dir//il+Salice+-+massofisioterapia+Via+Vittorio+Veneto,+15%2FA+47842+San+Giovanni+in+Marignano+RN/@43.9396227,12.7099613,18z/data=!4m5!4m4!1m0!1m2!1m1!1s0x132ce7207ce6ee35:0x7186b0319e152428"
             aria-label="Link alla mappa"
+            target="_blank"
           >
             <MapPinIcon className="h-[34px] w-[34px] ml-[8px] my-[5px]" />
             <span className="mt-[13px] ml-[10px]">NAVIGA</span>
-          </Link>
+          </a>
         </div>
       </div>
       <div
         className={`h-screen min-h-[1000px] min-[330px]:min-h-[650px] absolute top-0 my-auto \\
-        w-full overflow-hidden max-w-[1440px] bg-white -z-30`}
+        w-full overflow-hidden max-w-[1440px] bg-white dark:bg-salice-900 -z-30`}
       >
         <Image
           src={landingBg}
@@ -119,9 +116,9 @@ export default forwardRef(function LandingView(props, ref) {
         />
 
         <div
-          className="w-[2000px] h-[1200px] -translate-y-[60px] min-[330px]:-translate-y-[20px] bg-white \\
+          className="w-[2000px] h-[1200px] -translate-y-[60px] min-[330px]:-translate-y-[20px] bg-white dark:bg-salice-900 \\
         absolute top-[50%] left-1/2 -translate-x-[1000px] rotate-[16deg] -z-[1] \\
-        border-t-4 border-[#D9D9D9]"
+        border-t-4 border-[#D9D9D9] dark:border-white"
         />
       </div>
     </section>

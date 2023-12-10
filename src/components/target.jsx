@@ -27,7 +27,7 @@ const nunito = Nunito({
 
 const Card = ({ title, text, children }) => (
   <div>
-    <div className="max-w-[300px] h-[420px] flex flex-col bg-white shadow-material rounded-t-xl mx-auto">
+    <div className="max-w-[300px] h-[420px] flex flex-col bg-white dark:bg-salice-900  dark:text-white shadow-material rounded-t-xl mx-auto">
       {children}
       <div className="p-2 grow flex flex-col justify-around">
         <h3
@@ -36,29 +36,22 @@ const Card = ({ title, text, children }) => (
         >
           {title}
         </h3>
-        <p className={`text-left ${nunito.className} text-sm`}>{text}</p>
+        <p className={`text-left ${nunito.className} text-sm dark:font-thin`}>
+          {text}
+        </p>
       </div>
     </div>
   </div>
 );
 export default forwardRef(function Target(props, ref) {
   return (
-    <section
-      style={{
-        backgroundColor: "rgb(157,168,134)",
-        background:
-          "linear-gradient(rgba(157,168,134,1) 0%, rgba(223,228,214,1) 49%, rgba(157,168,134,1) 100%)",
-      }}
-      className="pt-20 pb-10"
-      ref={ref}
-    >
+    <section className="pt-20 pb-10 target-bg" ref={ref}>
       <h2
-        className={`${lexend.className} text-3xl text-white font-semibold p-4 pb-3 text-shadow`}
+        className={`${lexend.className} text-3xl text-salice-900 dark:text-white font-semibold p-4 pb-3 text-shadow`}
       >
         Cosa trattiamo
       </h2>
-      <div className="border-2 border-white w-64 shadow-md min-[320px]:mx-2" />
-      {/* flex flex-row flex-wrap justify-evenly gap-6  */}
+      <div className="border-2 border-salice-900 dark:border-white w-64 shadow-md" />
       <div className="grid place-content-center gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10">
         <Card
           title="Dolori muscolo-scheletrici"

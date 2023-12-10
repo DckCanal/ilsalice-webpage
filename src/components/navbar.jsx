@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useRef } from "react";
 import logo from "../../images/icons/logo.jpeg";
+import logoDark from "../../images/icons/logo - white alpha.png";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 export default function Navbar({ smoothScrollFunc }) {
   const [open, setOpen] = useState(false);
@@ -27,9 +28,9 @@ export default function Navbar({ smoothScrollFunc }) {
 
   return (
     <nav
-      className={`bg-white ${
+      className={`bg-white dark:bg-salice-900 ${
         !open ? "h-[60px]" : "h-[240px]"
-      } rounded-md mt-3 flex flex-col border border-t-1 border-salice-50 \\ 
+      } rounded-md mt-3 flex flex-col border border-t-1 border-salice-50 dark:border-white  \\ 
       shadow-md fixed w-[95%] max-w-[1420px] left-1/2 -translate-x-1/2 transition-[height] duration-500 z-40 overflow-hidden`}
     >
       <div className="flex flex-row justify-between">
@@ -38,9 +39,22 @@ export default function Navbar({ smoothScrollFunc }) {
           className="my-2 ml-3 no-click-bg"
           onClick={(ev) => handleLinkClick(ev, "landing")}
         >
-          <Image src={logo} height={44} width={44} alt="Logo sulla navbar" />
+          <Image
+            src={logo}
+            height={44}
+            width={44}
+            alt="Logo sulla navbar"
+            className="block dark:hidden"
+          />
+          <Image
+            src={logoDark}
+            height={44}
+            width={44}
+            alt="Logo sulla navbar"
+            className="hidden dark:block"
+          />
         </Link>
-        <h1 className="font-normal italic text-2xl mt-3 text-shadow">
+        <h1 className="font-normal italic text-2xl mt-3 text-shadow dark:text-white">
           il Salice
         </h1>
         <button
@@ -51,12 +65,12 @@ export default function Navbar({ smoothScrollFunc }) {
           //   WebkitTapHighlightColor: "transparent",
           // }}
         >
-          <Bars3Icon className="h-9 w-9 my-3 mx-3" />
+          <Bars3Icon className="h-9 w-9 my-3 mx-3 dark:text-white" />
         </button>
       </div>
 
       {/* Links */}
-      <div className="flex flex-col justify-evenly text-center h-[180px]">
+      <div className="flex flex-col justify-evenly text-center h-[180px] dark:text-white">
         <a
           className="grow text-shadow-only-over"
           href="#contatti"

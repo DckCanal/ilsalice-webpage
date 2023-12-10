@@ -40,15 +40,11 @@ function Card({ title, text, image }) {
             {title}
           </h4>
           <div
-            className="relative w-full h-72"
-            style={{
-              background:
-                "linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 60%)",
-            }}
+            className="relative w-full h-72 treatment-card" // bg-gradient-to-b from-white/0 to-white/100 via-white/90 dark:from-transparent dark:to-salice-900 dark:via-salice-900/90"
           >
             <Image src={image} alt="" fill={true} className="-z-10" />
             <p
-              className={`${nunito.className} text-center px-5 pt-44 pb-3 h-72 font-medium`}
+              className={`${nunito.className} text-center px-5 pt-44 pb-3 h-72 font-medium dark:text-white dark:font-thin`}
             >
               {text}
             </p>
@@ -61,7 +57,10 @@ function Card({ title, text, image }) {
 
 export default forwardRef(function Treatments(props, ref) {
   return (
-    <section className="relative bg-white -z-30 pb-10 pt-20" ref={ref}>
+    <section
+      className="relative dark:bg-salice-900 bg-white -z-30 pb-10 pt-20"
+      ref={ref}
+    >
       <Image
         src={treatmentsBg}
         alt="Sfondo per la sezione dei trattamenti"
@@ -73,11 +72,11 @@ export default forwardRef(function Treatments(props, ref) {
         className="relative opacity-40 blur-[3px] -z-20"
       />
       <h2
-        className={`${lexend.className} text-3xl text-white font-semibold p-4 pb-3 text-shadow`}
+        className={`${lexend.className} text-3xl text-salice-900 dark:text-white font-semibold p-4 pb-3 text-shadow`}
       >
         I trattamenti
       </h2>
-      <div className="border-2 border-white w-56 shadow-md" />
+      <div className="border-2 border-salice-900 dark:border-white w-56 shadow-md" />
 
       {/* <div className="flex flex-row flex-wrap gap-6 justify-evenly bg-transparent mt-10 min-[320px]:mx-2"> */}
       <div className="grid place-content-center gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10">

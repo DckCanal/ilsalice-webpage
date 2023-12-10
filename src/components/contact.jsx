@@ -41,7 +41,7 @@ function ContactCard({ name, phone, phoneString, mail, img }) {
   return (
     <div
       className={`max-w-full overflow-clip w-[360px] lg:w-[500px] h-[100px] lg:h-[110px]  xl:h-[270px] rounded-md  border  \\
-    border-salice-50 bg-white flex flex-row gap-[8px]`}
+    border-salice-50 dark:border-white bg-white dark:bg-salice-900 flex flex-row gap-[8px] dark:text-white`}
     >
       <div
         className="relative h-[64px] w-[64px] xl:h-[96px] xl:w-[96px] overflow-hidden \\
@@ -66,11 +66,11 @@ function ContactCard({ name, phone, phoneString, mail, img }) {
         >
           {name}
         </h3>
-        <div className="max-xl:hidden border border-gray-500 w-[300px] mt-[24px] ml-[18px]" />
+        <div className="max-xl:hidden border border-gray-500 dark:border-salice-50 w-[300px] mt-[24px] ml-[18px]" />
         <div className="flex flex-row xl:flex-col max-xl:ml-2">
           <a
             href={linkText}
-            className="flex flex-row border border-salice-700 bg-gradient-to-br from-salice-50/25 to-salice-50/75 shadow-material rounded-lg w-36 lg:w-40 xl:w-44 mt-1 xl:mt-6 ml-4"
+            className="flex flex-row border border-salice-700 dark:border-0 bg-gradient-to-br from-salice-50/25 to-salice-50/75 dark:from-salice-100 dark:to-salice-500 shadow-material rounded-lg w-36 lg:w-40 xl:w-44 mt-1 xl:mt-6 ml-4"
           >
             <PhoneArrowUpRightIcon className="h-5 w-5 xl:h-6 xl:w-6 mx-2 my-auto" />
             <h4
@@ -83,7 +83,7 @@ function ContactCard({ name, phone, phoneString, mail, img }) {
           {mail && (
             <a
               href={`mailto:${mail}`}
-              className="flex flex-row border border-salice-700 rounded-lg w-fit mt-2 xl:my-6 ml-8 lg:ml-12 xl:ml-4"
+              className="flex flex-row border border-salice-700 dark:border-white rounded-lg w-fit mt-2 xl:my-6 ml-8 lg:ml-12 xl:ml-4"
             >
               <EnvelopeIcon className="h-5 w-5 xl:h-6 xl:w-6 mx-2 my-auto" />
               <h4
@@ -104,8 +104,8 @@ function Quote() {
   return (
     <div className="pt-4 pb-10">
       <div
-        className="w-[290px] lg:w-[400px] xl:w-[600px] h-[200px] rounded-lg border border-salice-200 shadow-material \\
-    flex flex-col justify-between mx-auto bg-white py-[8px] lg:py-[20px] px-[18px]"
+        className="w-[290px] lg:w-[400px] xl:w-[600px] h-[200px] rounded-lg border border-salice-200 dark:border-salice-200 shadow-material \\
+    flex flex-col justify-between mx-auto bg-white dark:bg-salice-900 dark:text-white py-[8px] lg:py-[20px] px-[18px]"
       >
         <p
           className={`${merriweatherItalic.className} text-center text-shadow text-md mb-[25px]`}
@@ -125,7 +125,10 @@ function Quote() {
 
 export default forwardRef(function Contact(props, ref) {
   return (
-    <section className="pt-[100px] relative bg-white z-10" ref={ref}>
+    <section
+      className="pt-[100px] relative bg-white dark:bg-salice-900 z-10"
+      ref={ref}
+    >
       <Image
         src={contactBg}
         alt="Sfondo per la sezione dei contatti"
