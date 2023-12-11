@@ -1,7 +1,7 @@
 import landingBg from "../../images/landingBg.jpeg";
 import landingBadge from "../../images/landingBadge.jpeg";
 import logo from "../../images/icons/logo - alpha - min.png";
-import logoDark from "../../images/icons/logo - white alpha.png";
+import logoDark from "../../images/icons/logoDark.png";
 
 import WAIconGreen from "../../vendors/logo/WA-green.png";
 import WAIconWhite from "../../vendors/logo/WA-white.png";

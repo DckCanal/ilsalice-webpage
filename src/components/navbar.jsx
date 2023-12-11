@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useRef } from "react";
 import logo from "../../images/icons/logo.jpeg";
-import logoDark from "../../images/icons/logo - white alpha.png";
+import logoDark from "../../images/icons/logoDark.png";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 export default function Navbar({ smoothScrollFunc }) {
   const [open, setOpen] = useState(false);
