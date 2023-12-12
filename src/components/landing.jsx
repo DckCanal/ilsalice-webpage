@@ -26,7 +26,7 @@ const robotoBold = Roboto({
 export default forwardRef(function LandingView(props, ref) {
   return (
     <section
-      className={`overflow-visible h-screen min-h-[1000px] min-[330px]:min-h-[650px] flex flex-col justify-between pt-[84px]`}
+      className={`overflow-visible h-screen min-h-[1000px] min-[330px]:min-h-[680px] flex flex-col justify-between pt-[84px]`}
       id="landing"
       ref={ref}
     >
@@ -100,7 +100,7 @@ export default forwardRef(function LandingView(props, ref) {
         </div>
       </div>
       <div
-        className={`h-screen min-h-[1000px] min-[330px]:min-h-[650px] absolute top-0 my-auto \\
+        className={`h-screen min-h-[1000px] min-[330px]:min-h-[680px] absolute top-0 my-auto \\
         w-full overflow-hidden max-w-[1440px] bg-white dark:bg-salice-900 -z-30`}
       >
         <Image
