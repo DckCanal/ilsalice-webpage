@@ -1,6 +1,6 @@
 import fontana from "../../../images/gallery/IMG_0625.jpeg";
 import diffusore from "../../../images/gallery/IMG_0627.jpeg";
-import pianta from "../../../images/gallery/IMG_0630.jpeg";
+import pianta from "../../../images/gallery/IMG_0630_2.jpeg";
 import studioGiacomo from "../../../images/gallery/IMG_1597.jpeg";
 import studioMarco from "../../../images/gallery/IMG_1602.jpeg";
 import studioSilvia from "../../../images/gallery/IMG_1608.jpeg";
