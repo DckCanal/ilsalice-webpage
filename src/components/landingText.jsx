@@ -1,5 +1,3 @@
-import { useState, useEffect } from "react";
-
 import { Lexend } from "next/font/google";
 
 const lexend = Lexend({
@@ -8,39 +6,37 @@ const lexend = Lexend({
 });
 
 export default function LandingText() {
-  const [text, setText] = useState("Ascolto");
-  useEffect(() => {
-    const timer = setInterval(() => {
-      //console.log(text, typeof text);
-      //   if (text === "Ascolto") setText((text) => "Competenza");
-      //   else if (text === "Competenza") setText((text) => "Affidabilità");
-      //   else setText((text) => "Ascolto");
-      setText((text) =>
-        text === "Ascolto"
-          ? "Competenza"
-          : text === "Competenza"
-          ? "Affidabilità"
-          : "Ascolto"
-      );
-    }, 4000);
-
-    return () => {
-      clearInterval(timer);
-    };
-  }, []);
   return (
     <div
       className={`font-medium text-4xl \\
            mx-auto text-center ${lexend.className} \\
-          text-[#284800] dark:text-white text-shadow grow flex flex-col justify-around`}
+          text-[#284800] dark:text-white text-shadow grow flex flex-col justify-center`}
     >
       <h2
-        className="overflow-hidden"
+        className="landing-text m-0 p-0"
         style={{
-          animation: "text-animation 4s ease-in-out infinite",
+          opacity: "0%",
         }}
       >
-        {text}
+        Ascolto
+      </h2>
+      <h2
+        className="landing-text m-0 p-0 -translate-y-full"
+        style={{
+          animationDelay: "3s",
+          opacity: "0%",
+        }}
+      >
+        Competenza
+      </h2>
+      <h2
+        className="landing-text m-0 p-0 -translate-y-[200%]"
+        style={{
+          animationDelay: "6s",
+          opacity: "0%",
+        }}
+      >
+        Affidabilità
       </h2>
     </div>
   );
