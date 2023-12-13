@@ -5,13 +5,8 @@ import giacomoProfile from "../../images/giacomo-profile.webp";
 import Image from "next/image";
 import PhotoGallery from "./photoGallery/PhotoGallery";
 import { PhoneArrowUpRightIcon, EnvelopeIcon } from "@heroicons/react/20/solid";
-import Link from "next/link";
 
 import { Lexend, Roboto, Merriweather } from "next/font/google";
-const lexend = Lexend({
-  subsets: ["latin"],
-  display: "swap",
-});
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -48,8 +43,6 @@ function ContactCard({ name, phone, phoneString, mail, img }) {
        my-[18px] lg:my-[23px] xl:my-[20px] ml-[18px] lg:ml-[23px] lg:mx-[20px]"
       >
         <Image
-          // height={64}
-          // width={64}
           fill={true}
           style={{ objectFit: "cover" }}
           alt={`Foto profilo di ${name}`}
@@ -61,8 +54,6 @@ function ContactCard({ name, phone, phoneString, mail, img }) {
       <div className="grow">
         <h3
           className={`${robotoHeavy.className} text-lg lg:text-lg xl:text-2xl ml-2 xl:ml-[20px] mt-2 xl:mt-[48px] uppercase`}
-          // style={{ fontVariantCaps: "petite-caps" }}
-          //style={{ fontVariantCaps: "small-caps" }}
         >
           {name}
         </h3>
@@ -71,7 +62,7 @@ function ContactCard({ name, phone, phoneString, mail, img }) {
           <a
             href={linkText}
             className="flex flex-row border border-salice-700 dark:border-0 bg-gradient-to-br from-salice-50/25 to-salice-50/75 dark:from-salice-100 dark:to-salice-500 shadow-material rounded-lg w-36 lg:w-40 xl:w-44 mt-1 xl:mt-6 ml-4"
-            aria-label="Avvia chiamata"
+            aria-label={`${phoneString} avvia chiamata`}
           >
             <PhoneArrowUpRightIcon className="h-5 w-5 xl:h-6 xl:w-6 mx-2 my-auto" />
             <h4
@@ -85,7 +76,7 @@ function ContactCard({ name, phone, phoneString, mail, img }) {
             <a
               href={`mailto:${mail}`}
               className="flex flex-row border border-salice-700 dark:border-white rounded-lg w-fit mt-2 xl:my-6 ml-8 lg:ml-12 xl:ml-4"
-              aria-label="Scrivi email"
+              aria-label={`${mail} scrivi email`}
             >
               <EnvelopeIcon className="h-5 w-5 xl:h-6 xl:w-6 mx-2 my-auto" />
               <h4
