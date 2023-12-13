@@ -39,6 +39,7 @@ export default forwardRef(function LandingView(props, ref) {
           height={180}
           className="rounded-full border-2 border-white shadow-material mx-auto"
           placeholder="blur"
+          priority
         />
         <div className="mt-4">
           <h3 className="italic text-2xl lg:text-3xl text-shadow text-center text-[#626262] dark:text-white">
