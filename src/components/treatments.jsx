@@ -28,7 +28,7 @@ const lexend = Lexend({
   display: "swap",
 });
 
-function Card({ title, text, image }) {
+function Card({ title, text, image, alt }) {
   return (
     <div>
       <div className="rounded-lg w-64  shadow-material mx-auto">
@@ -42,7 +42,7 @@ function Card({ title, text, image }) {
           <div
             className="relative w-full h-72 treatment-card" // bg-gradient-to-b from-white/0 to-white/100 via-white/90 dark:from-transparent dark:to-salice-900 dark:via-salice-900/90"
           >
-            <Image src={image} alt="" fill={true} className="-z-10" />
+            <Image src={image} alt={alt} fill={true} className="-z-10" placeholder="blur" />
             <p
               className={`${nunito.className} text-center px-5 pt-44 pb-3 h-72 font-medium dark:text-white dark:font-thin`}
             >
@@ -84,31 +84,37 @@ export default forwardRef(function Treatments(props, ref) {
           title="Viscerale"
           text="Rilascio dei visceri, degli organi e delle strutture legamentose e degli apparati di sospensione"
           image={viscerale.src}
+          alt="Mani di Marco De Canal sulla pancia di una paziente per eseguire un trattamento viscerale dell'intestino tenue"
         />
         <Card
           title="Riabilitativo"
           text="Recupero della piena funzionalità a seguito di fratture, chirurgie o traumi"
           image={riabilitazione.src}
+          alt="Esecuzione di un esercizio con elastici per il rinforzo del muscolo sovraspinato"
         />
         <Card
           title="Fasciale"
           text="Distensione delle strutture legamentose del corpo, per eliminare aderenze e fissazioni disfunzionali"
           image={fasciale.src}
+          alt="Marco De Canal tratta la fascia lombare a una paziente"
         />
         <Card
           title="Drenante"
           text="Stimolo alla circolazione della linfa e al pieno recupero funzionale del sistema linfatico"
           image={massaggio.src}
+          alt="Esecuzione di un massaggio drenante all'avambraccio"
         />
         <Card
           title="Cranio sacrale"
           text="Recupero della respirazione craniale e della circolazione del liquido cerebro spinale"
           image={cranio.src}
+          alt="Marco De Canal tratta il cranio di una paziente, seduto alla testa del lettino"
         />
         <Card
           title="Posturale"
           text="Miglioramento della postura ed esercizi per il suo mantenimento"
           image={posturale.src}
+          alt="Esecuzione di un test di extrarotazione sulla spalla"
         />
       </div>
     </section>

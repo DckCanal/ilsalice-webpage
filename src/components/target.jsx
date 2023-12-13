@@ -60,11 +60,10 @@ export default forwardRef(function Target(props, ref) {
           <Image
             width={300}
             height={150}
-            //className="rounded-[117px]"
+            alt="Quaderno degli appunti con disegno di una colonna vertebrale"
             className="rounded-t-xl"
-            src={lombare.src}
-
-            //placeholder="blur"
+            src={lombare.src}    
+            placeholder="blur"
           />
         </Card>
         <Card
@@ -76,6 +75,9 @@ export default forwardRef(function Target(props, ref) {
             height={150}
             src={visceri.src}
             className="rounded-t-xl"
+            placeholder="blur"
+            alt="Una donna che si tocca la pancia"
+
           />
         </Card>
         <Card
@@ -87,6 +89,9 @@ export default forwardRef(function Target(props, ref) {
             height={150}
             src={corsa.src}
             className="rounded-t-xl"
+            placeholder="blur"
+            alt="Un corridore di staffetta sui blocchi di partenza"
+
           />
         </Card>
 
@@ -99,6 +104,9 @@ export default forwardRef(function Target(props, ref) {
             height={150}
             src={anziano.src}
             className="rounded-t-xl"
+            placeholder="blur"
+            alt="Un anziano visto da dietro con un tramonto sullo sfondo"
+
           />
         </Card>
         <Card
@@ -110,6 +118,9 @@ export default forwardRef(function Target(props, ref) {
             height={150}
             src={ansia.src}
             className="rounded-t-xl"
+            placeholder="blur"
+            alt="Una studente di fronte ad un computer con le mani nei capelli"
+
           />
         </Card>
         <Card
@@ -121,6 +132,8 @@ export default forwardRef(function Target(props, ref) {
             height={150}
             src={bambino.src}
             className="rounded-t-xl"
+            placeholder="blur"
+            alt="Un bambino corre in un campo da gioco."
           />
         </Card>
       </div>

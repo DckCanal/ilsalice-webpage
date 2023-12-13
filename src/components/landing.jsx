@@ -34,10 +34,11 @@ export default forwardRef(function LandingView(props, ref) {
       <div className="flex flex-col grow-0">
         <Image
           src={landingBadge}
-          alt="Immagine di benvenuto"
+          alt="Marco De Canal alla scrivania con una paziente"
           width={180}
           height={180}
           className="rounded-full border-2 border-white shadow-material mx-auto"
+          placeholder="blur"
         />
         <div className="mt-4">
           <h3 className="italic text-2xl lg:text-3xl text-shadow text-center text-[#626262] dark:text-white">
@@ -58,6 +59,7 @@ export default forwardRef(function LandingView(props, ref) {
             width={74}
             alt="Logo"
             className="mx-auto min-[330px]:mx-0 block dark:hidden"
+            placeholder="blur"
           />
           <Image
             src={logoDark}
@@ -65,6 +67,7 @@ export default forwardRef(function LandingView(props, ref) {
             width={74}
             alt="Logo"
             className="mx-auto min-[330px]:mx-0 hidden dark:block"
+            placeholder="blur"
           />
           <h4 className="italic text-xl lg:text-2xl">il Salice</h4>
           <h5 className="font-light text-sm lg:text-base">
@@ -77,7 +80,7 @@ export default forwardRef(function LandingView(props, ref) {
               ${robotoBold.className} text-sm no-click-bg text-white bg-gradient-to-br from-salice-100 to-salice-500 shadow-material`}
             href="https://wa.me/3385330241"
             target="_blank"
-            aria-label="Apri chat su WhatsApp"
+            aria-label="Scrivi su WhatsApp"
           >
             <Image
               src={WAIconWhite}
@@ -91,7 +94,7 @@ export default forwardRef(function LandingView(props, ref) {
           <a
             className={`border border-salice-50 dark:border-white dark:text-white rounded-xl flex flew-row w-32 h-12 ${roboto.className} text-sm no-click-bg mx-auto dark:bg-gradient-to-br dark:from-salice-600 dark:to-salice-800`}
             href="https://maps.google.com/maps/dir//il+Salice+-+massofisioterapia+Via+Vittorio+Veneto,+15%2FA+47842+San+Giovanni+in+Marignano+RN/@43.9396227,12.7099613,18z/data=!4m5!4m4!1m0!1m2!1m1!1s0x132ce7207ce6ee35:0x7186b0319e152428"
-            aria-label="Link alla mappa"
+            aria-label="Naviga"
             target="_blank"
           >
             <MapPinIcon className="h-[34px] w-[34px] ml-[8px] my-[5px]" />

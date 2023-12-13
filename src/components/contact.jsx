@@ -71,6 +71,7 @@ function ContactCard({ name, phone, phoneString, mail, img }) {
           <a
             href={linkText}
             className="flex flex-row border border-salice-700 dark:border-0 bg-gradient-to-br from-salice-50/25 to-salice-50/75 dark:from-salice-100 dark:to-salice-500 shadow-material rounded-lg w-36 lg:w-40 xl:w-44 mt-1 xl:mt-6 ml-4"
+            aria-label="Avvia chiamata"
           >
             <PhoneArrowUpRightIcon className="h-5 w-5 xl:h-6 xl:w-6 mx-2 my-auto" />
             <h4
@@ -84,6 +85,7 @@ function ContactCard({ name, phone, phoneString, mail, img }) {
             <a
               href={`mailto:${mail}`}
               className="flex flex-row border border-salice-700 dark:border-white rounded-lg w-fit mt-2 xl:my-6 ml-8 lg:ml-12 xl:ml-4"
+              aria-label="Scrivi email"
             >
               <EnvelopeIcon className="h-5 w-5 xl:h-6 xl:w-6 mx-2 my-auto" />
               <h4

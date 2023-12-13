@@ -59,6 +59,7 @@ export default function Navbar({ smoothScrollFunc }) {
         </h1>
         <button
           ref={toggleIcon}
+          aria-label="Espandi barra di navigazione"
           onClick={() => toggleNavbar()}
           className="no-click-bg"
           // style={{
