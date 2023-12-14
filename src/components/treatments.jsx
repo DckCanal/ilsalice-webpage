@@ -33,16 +33,22 @@ function Card({ title, text, image, alt }) {
     <div>
       <div className="rounded-lg w-64  shadow-material mx-auto">
         <div className={`text-center ${roboto.className} `}>
-          <h4
+          <h3
             className="text-xl text-white bg-gradient-to-br from-salice-100 to-salice-600 rounded-t-lg h-16 py-4"
             style={{ fontVariantCaps: "small-caps" }}
           >
             {title}
-          </h4>
+          </h3>
           <div
             className="relative w-full h-72 treatment-card" // bg-gradient-to-b from-white/0 to-white/100 via-white/90 dark:from-transparent dark:to-salice-900 dark:via-salice-900/90"
           >
-            <Image src={image} alt={alt} fill={true} className="-z-10" placeholder="blur" />
+            <Image
+              src={image}
+              alt={alt}
+              fill={true}
+              className="-z-10"
+              placeholder="blur"
+            />
             <p
               className={`${nunito.className} text-center px-5 pt-44 pb-3 h-72 font-medium dark:text-white dark:font-thin`}
             >
