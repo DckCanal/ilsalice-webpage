@@ -6,7 +6,7 @@ import Image from "next/image";
 import PhotoGallery from "./photoGallery/PhotoGallery";
 import { PhoneArrowUpRightIcon, EnvelopeIcon } from "@heroicons/react/20/solid";
 
-import { Lexend, Roboto, Merriweather } from "next/font/google";
+import { Roboto, Merriweather } from "next/font/google";
 
 const roboto = Roboto({
   subsets: ["latin"],
