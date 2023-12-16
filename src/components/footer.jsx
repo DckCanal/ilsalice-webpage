@@ -21,7 +21,7 @@ const robotoLightItalic = Roboto({
 
 export default function Footer(props) {
   return (
-    <section className="bg-[#636363] dark:bg-gray-900 py-4 text-white text-center">
+    <footer className="bg-[#636363] dark:bg-gray-900 py-4 text-white text-center">
       <h3 className={`text-base ${roboto.className}`}>il Salice</h3>
       <h4 className={`text-base ${robotoLightItalic.className}`}>
         massofisioterapia e osteopatia
@@ -38,6 +38,6 @@ export default function Footer(props) {
       <h5 className={`${robotoLight.className}`}>
         Giacomo Muccioli 339 318 2797
       </h5>
-    </section>
+    </footer>
   );
 }
