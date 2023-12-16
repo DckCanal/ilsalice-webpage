@@ -1,15 +1,28 @@
 {
   "name": "ilsalice-web-page",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Pagina web per lo studio di massofisioterapia",
-  "main": "index.html",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "author": "Marco De Canal",
   "license": "ISC",
+  "dependencies": {
+    "@headlessui/react": "^1.7.14",
+    "@heroicons/react": "^2.0.17",
+    "next": "^13.2.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-photo-album": "^2.3.0",
+    "sharp": "^0.32.0",
+    "yet-another-react-lightbox": "^3.15.6"
+  },
   "devDependencies": {
-    "parcel": "^1.12.4"
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7"
   }
 }
