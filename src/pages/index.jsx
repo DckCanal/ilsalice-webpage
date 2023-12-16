@@ -50,6 +50,8 @@ function HomePage() {
           name="description"
           content="Il Salice è uno studio di fisioterapia, massofisioterapia e tecniche osteopatiche a San Giovanni in Marignano, in provincia di Rimini. Marco De Canal e Giacomo Muccioli sono i due fisioterapisti e osteopati che lavorano presso il Salice. Contatti e mappa."
         />
+        <link rel="canonical" href="https://ilsalice.netlify.app/" />
+        <link rel="icon" type="image/x-icon" href="/images/favicon64.ico" />
       </Head>
       {/* <Header /> */}
       <header>
