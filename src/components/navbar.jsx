@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useRef } from "react";
-import logo from "../../images/icons/logo.jpeg";
+import logo from "../../images/icons/logo.webp";
 import logoDark from "../../images/icons/logoDark.png";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 export default function Navbar({ smoothScrollFunc }) {
@@ -77,28 +77,28 @@ export default function Navbar({ smoothScrollFunc }) {
           href="#contatti"
           onClick={(ev) => handleLinkClick(ev, "contact")}
         >
-          <h3>Contatti</h3>
+          <h2>Contatti</h2>
         </a>
         <a
           className="grow text-shadow-only-over"
           href="#pazienti"
           onClick={(ev) => handleLinkClick(ev, "target")}
         >
-          <h3>Cosa facciamo</h3>
+          <h2>Cosa facciamo</h2>
         </a>
         <a
           className="grow text-shadow-only-over"
           href="#trattamenti"
           onClick={(ev) => handleLinkClick(ev, "treatments")}
         >
-          <h3>Tipi di trattamento</h3>
+          <h2>Tipi di trattamento</h2>
         </a>
         <a
           className="grow text-shadow-only-over"
           href="#mappa"
           onClick={(ev) => handleLinkClick(ev, "map")}
         >
-          <h3>Mappa</h3>
+          <h2>Mappa</h2>
         </a>
       </div>
     </nav>

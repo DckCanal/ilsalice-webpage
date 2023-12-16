@@ -2,12 +2,12 @@ import { forwardRef } from "react";
 import { Lexend, Roboto, Nunito } from "next/font/google";
 import Image from "next/image";
 
-import lombare from "../../images/lombare.jpeg";
-import corsa from "../../images/corsa.jpeg";
-import bambino from "../../images/bambino.jpeg";
-import ansia from "../../images/ansia.jpg";
-import visceri from "../../images/visceri.jpg";
-import anziano from "../../images/anziano.jpg";
+import lombare from "../../images/lombare.webp";
+import corsa from "../../images/corsa.webp";
+import bambino from "../../images/bambino.webp";
+import ansia from "../../images/ansia.webp";
+import visceri from "../../images/visceri.webp";
+import anziano from "../../images/anziano.webp";
 
 const lexend = Lexend({
   subsets: ["latin"],
@@ -62,7 +62,7 @@ export default forwardRef(function Target(props, ref) {
             height={150}
             alt="Quaderno degli appunti con disegno di una colonna vertebrale"
             className="rounded-t-xl"
-            src={lombare.src}    
+            src={lombare.src}
             placeholder="blur"
           />
         </Card>
@@ -77,7 +77,6 @@ export default forwardRef(function Target(props, ref) {
             className="rounded-t-xl"
             placeholder="blur"
             alt="Una donna che si tocca la pancia"
-
           />
         </Card>
         <Card
@@ -91,7 +90,6 @@ export default forwardRef(function Target(props, ref) {
             className="rounded-t-xl"
             placeholder="blur"
             alt="Un corridore di staffetta sui blocchi di partenza"
-
           />
         </Card>
 
@@ -106,7 +104,6 @@ export default forwardRef(function Target(props, ref) {
             className="rounded-t-xl"
             placeholder="blur"
             alt="Un anziano visto da dietro con un tramonto sullo sfondo"
-
           />
         </Card>
         <Card
@@ -120,7 +117,6 @@ export default forwardRef(function Target(props, ref) {
             className="rounded-t-xl"
             placeholder="blur"
             alt="Una studente di fronte ad un computer con le mani nei capelli"
-
           />
         </Card>
         <Card

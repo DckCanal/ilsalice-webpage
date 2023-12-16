@@ -1,5 +1,5 @@
 import { forwardRef } from "react";
-import contactBg from "../../images/contactBg.jpeg";
+import contactBg from "../../images/contactBg.webp";
 import marcoProfile from "../../images/marco-profile.webp";
 import giacomoProfile from "../../images/giacomo-profile.webp";
 import Image from "next/image";

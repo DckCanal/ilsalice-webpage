@@ -1,14 +1,14 @@
 import { forwardRef } from "react";
 import Image from "next/image";
 
-import cranio from "../../images/cranio.jpg";
-import viscerale from "../../images/viscerale.jpg";
-import fasciale from "../../images/fasciale.jpg";
-import riabilitazione from "../../images/riabilitazione.jpg";
-import massaggio from "../../images/massaggio.jpg";
-import posturale from "../../images/posturale.jpg";
+import cranio from "../../images/cranio.webp";
+import viscerale from "../../images/viscerale.webp";
+import fasciale from "../../images/fasciale.webp";
+import riabilitazione from "../../images/riabilitazione.webp";
+import massaggio from "../../images/massaggio.webp";
+import posturale from "../../images/posturale.webp";
 
-import treatmentsBg from "../../images/gallery/IMG_1667.jpeg";
+import treatmentsBg from "../../images/gallery/IMG_1667.webp";
 
 import { Roboto, Nunito, Lexend } from "next/font/google";
 
