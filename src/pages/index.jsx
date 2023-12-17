@@ -1,23 +1,6 @@
 import Head from "next/head";
 import { useRef } from "react";
 import Navbar from "../components/navbar";
-// import {
-//   Section,
-//   SectionTitle,
-//   SectionSubtitle,
-// } from "../components/old/section";
-// import Footer from "../components/old/footer";
-
-// import Header from "../components/old/header";
-
-// import {
-//   ChiSiamo,
-//   Perche,
-//   CosaFacciamo,
-//   Contatti,
-//   Trattamenti,
-//   Mappa,
-// } from "../components/old/content";
 
 import WhatsAppFAB from "../components/floatingWhatsAppButton";
 import LandingView from "../components/landing";
@@ -51,9 +34,7 @@ function HomePage() {
           content="Il Salice è uno studio di fisioterapia, massofisioterapia e tecniche osteopatiche a San Giovanni in Marignano, in provincia di Rimini. Marco De Canal e Giacomo Muccioli sono i due fisioterapisti e osteopati che lavorano presso il Salice. Contatti e mappa."
         />
         <link rel="canonical" href="https://ilsalice.netlify.app/" />
-        <link rel="icon" type="image/x-icon" href="/favicon64.ico" />
       </Head>
-      {/* <Header /> */}
       <header>
         <Navbar
           smoothScrollFunc={(ev, target) => {
@@ -73,14 +54,7 @@ function HomePage() {
         <Treatments ref={treatmentsRef} />
         <Map ref={mapRef} />
         <Footer ref={footerRef} />
-        {/* <ChiSiamo />
-        <Perche />
-        <CosaFacciamo />
-        <Contatti />
-        <Trattamenti />
-        <Mappa /> */}
       </main>
-      {/* <Footer /> */}
     </>
   );
 }
