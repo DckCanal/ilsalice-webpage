@@ -71,7 +71,7 @@
     transform: scale(1);
   }
 }
-
+/* 
 .landing-text {
   animation: text-pulse 9s ease-in-out infinite;
 }
@@ -95,7 +95,7 @@
   100% {
     opacity: 0%;
   }
-}
+} */
 .rotate0 {
   transition: transform 0.2s;
   transform: rotate(0);
