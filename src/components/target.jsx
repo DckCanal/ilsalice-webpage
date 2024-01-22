@@ -62,7 +62,8 @@ export default forwardRef(function Target(props, ref) {
             height={150}
             alt="Quaderno degli appunti con disegno di una colonna vertebrale"
             className="rounded-t-xl"
-            src={lombare.src}
+            //src={lombare.src}
+            src={lombare}
             placeholder="blur"
           />
         </Card>
@@ -73,7 +74,7 @@ export default forwardRef(function Target(props, ref) {
           <Image
             width={300}
             height={150}
-            src={visceri.src}
+            src={visceri}
             className="rounded-t-xl"
             placeholder="blur"
             alt="Una donna che si tocca la pancia"
@@ -86,7 +87,7 @@ export default forwardRef(function Target(props, ref) {
           <Image
             width={300}
             height={150}
-            src={corsa.src}
+            src={corsa}
             className="rounded-t-xl"
             placeholder="blur"
             alt="Un corridore di staffetta sui blocchi di partenza"
@@ -100,7 +101,7 @@ export default forwardRef(function Target(props, ref) {
           <Image
             width={300}
             height={150}
-            src={anziano.src}
+            src={anziano}
             className="rounded-t-xl"
             placeholder="blur"
             alt="Un anziano visto da dietro con un tramonto sullo sfondo"
@@ -113,7 +114,7 @@ export default forwardRef(function Target(props, ref) {
           <Image
             width={300}
             height={150}
-            src={ansia.src}
+            src={ansia}
             className="rounded-t-xl"
             placeholder="blur"
             alt="Una studente di fronte ad un computer con le mani nei capelli"
@@ -126,7 +127,7 @@ export default forwardRef(function Target(props, ref) {
           <Image
             width={300}
             height={150}
-            src={bambino.src}
+            src={bambino}
             className="rounded-t-xl"
             placeholder="blur"
             alt="Un bambino corre in un campo da gioco."

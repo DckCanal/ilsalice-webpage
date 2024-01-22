@@ -89,37 +89,37 @@ export default forwardRef(function Treatments(props, ref) {
         <Card
           title="Viscerale"
           text="Rilascio dei visceri, degli organi e delle strutture legamentose e degli apparati di sospensione"
-          image={viscerale.src}
+          image={viscerale}
           alt="Mani di Marco De Canal sulla pancia di una paziente per eseguire un trattamento viscerale dell'intestino tenue"
         />
         <Card
           title="Riabilitativo"
           text="Recupero della piena funzionalità a seguito di fratture, chirurgie o traumi"
-          image={riabilitazione.src}
+          image={riabilitazione}
           alt="Esecuzione di un esercizio con elastici per il rinforzo del muscolo sovraspinato"
         />
         <Card
           title="Fasciale"
           text="Distensione delle strutture legamentose del corpo, per eliminare aderenze e fissazioni disfunzionali"
-          image={fasciale.src}
+          image={fasciale}
           alt="Marco De Canal tratta la fascia lombare a una paziente"
         />
         <Card
           title="Drenante"
           text="Stimolo alla circolazione della linfa e al pieno recupero funzionale del sistema linfatico"
-          image={massaggio.src}
+          image={massaggio}
           alt="Esecuzione di un massaggio drenante all'avambraccio"
         />
         <Card
           title="Cranio sacrale"
           text="Recupero della respirazione craniale e della circolazione del liquido cerebro spinale"
-          image={cranio.src}
+          image={cranio}
           alt="Marco De Canal tratta il cranio di una paziente, seduto alla testa del lettino"
         />
         <Card
           title="Posturale"
           text="Miglioramento della postura ed esercizi per il suo mantenimento"
-          image={posturale.src}
+          image={posturale}
           alt="Esecuzione di un test di extrarotazione sulla spalla"
         />
       </div>
