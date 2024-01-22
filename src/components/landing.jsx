@@ -10,6 +10,7 @@ import Image from "next/image";
 import { forwardRef } from "react";
 import { Roboto } from "next/font/google";
 import LandingText from "./landingText";
+import AnimatedComponent from "./AnimatedComponent";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -30,26 +31,28 @@ export default forwardRef(function LandingView(props, ref) {
       ref={ref}
     >
       <LandingText />
-      <div className="flex flex-col grow-0">
-        <Image
-          src={landingBadge}
-          alt="Marco De Canal alla scrivania con una paziente"
-          width={180}
-          height={180}
-          className="rounded-full border-2 border-white shadow-material mx-auto"
-          placeholder="blur"
-          priority
-        />
-        <div className="mt-4">
-          <h3 className="italic text-2xl lg:text-3xl text-shadow text-center text-[#626262] dark:text-white">
-            al vostro servizio
-          </h3>
-          <div
-            className="mt-4 border border-salice-50 w-[220px] lg:w-[270px] \\
-          mx-auto mb-[30px]"
+      <AnimatedComponent>
+        <div className="flex flex-col grow-0">
+          <Image
+            src={landingBadge}
+            alt="Marco De Canal alla scrivania con una paziente"
+            width={180}
+            height={180}
+            className="rounded-full border-2 border-white shadow-material mx-auto"
+            placeholder="blur"
+            priority
           />
+          <div className="mt-4">
+            <h3 className="italic text-2xl lg:text-3xl text-shadow text-center text-[#626262] dark:text-white">
+              al vostro servizio
+            </h3>
+            <div
+              className="mt-4 border border-salice-50 w-[220px] lg:w-[270px] \\
+          mx-auto mb-[30px]"
+            />
+          </div>
         </div>
-      </div>
+      </AnimatedComponent>
 
       <div className="flex flex-col min-[330px]:flex-row justify-between my-6 mx-6 grow">
         <div className="flex flex-col justify-center min-[330px]:justify-end order-2 min-[330px]:order-1 text-center min-[330px]:text-left dark:text-white">

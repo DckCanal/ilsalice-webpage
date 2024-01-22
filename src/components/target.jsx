@@ -1,6 +1,7 @@
 import { forwardRef } from "react";
 import { Lexend, Roboto, Nunito } from "next/font/google";
 import Image from "next/image";
+import AnimatedComponent from "./AnimatedComponent";
 
 import lombare from "../../images/lombare.webp";
 import corsa from "../../images/corsa.webp";
@@ -26,7 +27,7 @@ const nunito = Nunito({
 });
 
 const Card = ({ title, text, children }) => (
-  <div>
+  <AnimatedComponent>
     <div className="max-w-[300px] h-[420px] flex flex-col bg-white dark:bg-salice-900  dark:text-white shadow-material rounded-t-xl mx-auto">
       {children}
       <div className="p-2 grow flex flex-col justify-around">
@@ -41,7 +42,7 @@ const Card = ({ title, text, children }) => (
         </p>
       </div>
     </div>
-  </div>
+  </AnimatedComponent>
 );
 export default forwardRef(function Target(props, ref) {
   return (

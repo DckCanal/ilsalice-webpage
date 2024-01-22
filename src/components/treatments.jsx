@@ -1,5 +1,6 @@
 import { forwardRef } from "react";
 import Image from "next/image";
+import AnimatedComponent from "./AnimatedComponent";
 
 import cranio from "../../images/cranio.webp";
 import viscerale from "../../images/viscerale.webp";
@@ -30,7 +31,7 @@ const lexend = Lexend({
 
 function Card({ title, text, image, alt }) {
   return (
-    <div>
+    <AnimatedComponent>
       <div className="rounded-lg w-64  shadow-material mx-auto">
         <div className={`text-center ${roboto.className} `}>
           <h3
@@ -57,7 +58,7 @@ function Card({ title, text, image, alt }) {
           </div>
         </div>
       </div>
-    </div>
+    </AnimatedComponent>
   );
 }
 
