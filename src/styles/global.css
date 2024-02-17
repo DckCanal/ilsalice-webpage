@@ -71,31 +71,24 @@
     transform: scale(1);
   }
 }
-/* 
-.landing-text {
-  animation: text-pulse 9s ease-in-out infinite;
-}
-
-@keyframes text-pulse {
+@keyframes text-animation {
   0% {
-    opacity: 0%;
+    width: 0;
   }
-  5% {
-    opacity: 100%;
+  25% {
+    width: 100%;
   }
-  28% {
-    opacity: 100%;
+  75% {
+    width: 100%;
   }
-  33% {
-    opacity: 0%;
-  }
-  66% {
-    opacity: 0%;
+  95% {
+    width: 0;
   }
   100% {
-    opacity: 0%;
+    width: 0;
   }
-} */
+}
+
 .rotate0 {
   transition: transform 0.2s;
   transform: rotate(0);
