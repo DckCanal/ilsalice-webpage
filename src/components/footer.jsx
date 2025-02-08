@@ -35,9 +35,15 @@ export default function Footer(props) {
       <h5 className={`mt-3 ${robotoLight.className}`}>
         Marco De Canal 338 533 0241
       </h5>
-      <h5 className={`${robotoLight.className}`}>
+      <h6 className={`${robotoLight.className}`}>
+        P. Iva 04370000400
+      </h6>
+      <h5 className={`mt-2 ${robotoLight.className}`}>
         Giacomo Muccioli 339 318 2797
       </h5>
+      <h6 className={`${robotoLight.className}`}>
+        P. Iva 04119390401
+      </h6>
     </footer>
   );
 }
