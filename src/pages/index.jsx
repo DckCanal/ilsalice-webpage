@@ -9,6 +9,7 @@ import Target from "../components/target";
 import Treatments from "../components/treatments";
 import Footer from "../components/footer";
 import Map from "../components/map";
+import PrivacyPolicyBanner from "../components/PrivacyPolicyBanner";
 
 function HomePage() {
   const landingRef = useRef(null);
@@ -47,6 +48,7 @@ function HomePage() {
       </header>
 
       <main>
+        <PrivacyPolicyBanner />
         <WhatsAppFAB refToObserve={landingRef} />
         <LandingView ref={landingRef} />
         <Contact ref={contactRef} />
@@ -54,6 +56,7 @@ function HomePage() {
         <Treatments ref={treatmentsRef} />
         <Map ref={mapRef} />
         <Footer ref={footerRef} />
+        
       </main>
     </>
   );
